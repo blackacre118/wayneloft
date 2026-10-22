@@ -1,0 +1,53 @@
+export const residences = {
+  meta: {
+    title: "Residences & Penthouses",
+    description:
+      "Approximately 300 apartments and a collection of twelve for-sale penthouses at WAYNE, 1200 Sixth Street, Detroit.",
+  },
+  hero: {
+    eyebrow: "The residences · South Tower & upper North Tower",
+    title: ["A home above", "the noise."],
+    intro: "Around 300 apartments, with a hotel’s service one elevator ride away.",
+  },
+  apartments: {
+    label: "(01) The apartments",
+    title: ["Hotel service.", "Your own front door."],
+    body: "Apartments across the South Tower and the upper North Tower, each with access to the hotel’s food and beverage program, the resident amenity level and the roof. Floor plans and pricing to be released [RELEASE DATE].",
+    gallery: [
+      "Render · Residence living room, evening",
+      "Render · Kitchen detail, stone + brass",
+      "Render · Balcony, South Tower",
+      "Render · Bedroom, city at night",
+    ],
+  },
+  living: {
+    label: "(02) Resident life",
+    items: [
+      { title: "In-residence dining", body: "The hotel kitchen and cellar, delivered to your door." },
+      { title: "Resident amenity · L2", body: "A full floor set aside for residents, below the hotel floors." },
+      { title: "The Roof", body: "A terrace thirteen floors up, facing the river." },
+      { title: "Fitness · L1", body: "Shared with the hotel, open to residents." },
+    ],
+  },
+  penthouses: {
+    label: "(03) The penthouse collection",
+    title: ["Twelve.", "Never more."],
+    body: "Twelve condominium residences for sale at the top of the North Tower. Private arrival, panoramic glass, and the kind of quiet only altitude buys. Each is offered privately, by appointment.",
+    details: [
+      { k: "Residences", v: "12, for sale" },
+      { k: "Location", v: "Upper floors, North Tower" },
+      { k: "Arrival", v: "Private" },
+      { k: "Pricing", v: "By request · [PRICING]" },
+    ],
+    gallery: [
+      "Render · Penthouse great room, panoramic glass",
+      "Render · Penthouse private arrival",
+    ],
+    cta: { href: "/residences?role=penthouse#inquire", label: "Request the collection" },
+    imageAlt: "The crown of the North Tower at night",
+  },
+  inquire: {
+    title: ["Request", "the collection."],
+    intro: "Penthouse inquiries are handled privately. Apartment interest lists open ahead of leasing.",
+  },
+} as const;
