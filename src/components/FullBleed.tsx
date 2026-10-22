@@ -42,7 +42,7 @@ export function FullBleed({
           style={{ objectPosition }}
         />
       ) : (
-        <Placeholder label={render} className="absolute inset-0 -z-20" />
+        <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20" />
       )}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.62)]" />
       <Reveal className="mx-auto flex max-w-[1328px] flex-col items-center gap-9 px-6 py-32 text-center md:px-14 md:py-40">

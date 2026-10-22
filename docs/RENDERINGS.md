@@ -1,35 +1,34 @@
-# Renderings & placeholders
+# Renderings & photos
 
-Every dark striped panel on the site is a placeholder labelled `RENDER · …`. Drop the
-finished image into `public/images/` with the filename below, then swap the
-`<Placeholder>` for `next/image` (or tell Claude "use lobby-night.jpg for the lobby").
-Export at max 2400px wide, compressed JPG; hero images ideally 2880px+.
+**To add a photo:** upload it to `public/images/` with the exact filename below (`.jpg`, `.jpeg`,
+`.png` or `.webp`). The next deploy swaps it in automatically wherever that slot appears; no code
+change. Mapping lives in `src/content/renders.ts`. Ideal size: 2400px wide (2880px+ for full-screen
+heroes), under ~3 MB.
 
-## Needed renderings
+| Filename | Appears on |
+| --- | --- |
+| `residences-hero` | Residences · hero (full screen) |
+| `residence-living` | Home residences (large) · Residences gallery |
+| `residence-kitchen` | Home residences · Residences gallery |
+| `residence-balcony` | Home residences · Residences gallery |
+| `residence-bedroom` | Residences gallery (wide) |
+| `penthouse-great-room` | Residences · penthouses |
+| `penthouse-arrival` | Residences · penthouses |
+| `lobby` | Hotel · arrival (red chandelier, checker floor) |
+| `reception` | Hotel · arrival (black marble, lit edge) |
+| `hotel-room` | Hotel · rooms |
+| `hotel-bath` | Hotel · rooms |
+| `hotel-corridor` | Hotel · rooms |
+| `pennyworth-bar` | Home amenities card · Hotel F&B |
+| `dining-1939` | Amenities · F&B |
+| `signal-rooftop` | Home amenities card · Amenities roof |
+| `manor-level-23` | Home amenities card · Amenities venue |
+| `league-fitness` | Amenities · spaces |
+| `study-lounge` | Amenities · spaces |
+| `fox-conference` | Amenities · spaces |
 
-| Filename (suggested)            | Where it appears                          | Brief |
-| ------------------------------- | ----------------------------------------- | ----- |
-| `lobby-night.jpg`               | /hotel · Arrival (large)                  | Dark lobby, single sculptural red glass chandelier, black-and-white marble checker floor |
-| `reception-monolith.jpg`        | /hotel · Arrival (tall)                   | Black marble monolith reception, fire-orange lit edge |
-| `hotel-room-night.jpg`          | /hotel · Rooms                            | Guest room, floor-to-ceiling glass, city at night |
-| `hotel-bath.jpg`                | /hotel · Rooms                            | Bath, stone and dark glass |
-| `hotel-corridor.jpg`            | /hotel · Rooms                            | Corridor, low light |
-| `lobby-bar.jpg`                 | / Amenities card · /hotel F&B             | Lobby bar, evening |
-| `dining-room.jpg`               | /amenities · F&B                          | Dining room, evening service |
-| `rooftop-terrace-dusk.jpg`      | / Amenities card · /amenities Roof        | South Tower roof terrace, river view at dusk |
-| `level-23-venue.jpg`            | / Amenities card · /amenities L23         | Full-floor venue set for dinner, city at night |
-| `residence-hero-night.jpg`      | /residences hero                          | Residence living room at night, city view |
-| `residence-living-evening.jpg`  | / and /residences gallery                 | Living room, evening |
-| `residence-kitchen.jpg`         | / and /residences gallery                 | Kitchen detail, stone + brass |
-| `residence-balcony-south.jpg`   | / and /residences gallery                 | Balcony, South Tower |
-| `residence-bedroom-night.jpg`   | /residences gallery                       | Bedroom, city at night |
-| `penthouse-great-room.jpg`      | /residences · Penthouses                  | Great room, panoramic glass |
-| `penthouse-arrival.jpg`         | /residences · Penthouses                  | Private arrival |
-| `fitness-l1.jpg`                | /amenities · Spaces                       | Fitness, L1 |
-| `resident-lounge-l2.jpg`        | /amenities · Spaces                       | Resident lounge, L2 |
-| `conference-room.jpg`           | /amenities · Spaces                       | Conference room |
-| `site-aerial.jpg` (replace)     | / Development · /development Site         | Licensed aerial with parcels outlined |
-| `exterior-night.jpg` (upgrade)  | Heroes, hotel, penthouses                 | Same view at 2880px+; ideally a distinct crown shot for the penthouse section |
+To replace the two existing photos, upload a new file with the same name: `exterior-night.jpg`
+(home hero, hotel split, penthouse sections, page heroes) or `site-aerial.jpg` (development).
 
 ## Text placeholders
 

@@ -28,16 +28,16 @@ export const hotel = {
   levels: {
     label: "(03) The first two levels",
     items: [
-      { k: "L1", v: "Lobby, lounge and fitness" },
-      { k: "L2", v: "Hotel and resident amenity, conference rooms" },
+      { k: "L1", v: "Lobby, Pennyworth bar, The League fitness" },
+      { k: "L2", v: "The Study, Fox conference rooms" },
       { k: "L3–11", v: "Guest rooms · approximately 180 keys" },
-      { k: "L23", v: "Event venue, direct elevator from the lobby" },
+      { k: "L23", v: "The Manor, direct elevator from the lobby" },
     ],
   },
   dining: {
     label: "(04) Food & beverage",
     title: ["Lobby bar to", "room service."],
-    body: "One kitchen and one cellar serve the hotel and the residences — the lobby bar, the dining room, events on Level 23 and in-room dining.",
+    body: "1939 in the dining room, Pennyworth at the bar, The Cave below. One kitchen and one cellar serve the hotel and the residences — through to events in The Manor and in-room dining.",
     render: "Render · Lobby bar, evening",
     cta: { href: "/amenities", label: "The F&B program" },
   },

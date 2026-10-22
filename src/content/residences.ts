@@ -23,15 +23,15 @@ export const residences = {
   living: {
     label: "(02) Resident life",
     items: [
-      { title: "In-residence dining", body: "The hotel kitchen and cellar, delivered to your door." },
-      { title: "Resident amenity · L2", body: "A full floor set aside for residents, below the hotel floors." },
-      { title: "The Roof", body: "A terrace thirteen floors up, facing the river." },
-      { title: "Fitness · L1", body: "Shared with the hotel, open to residents." },
+      { title: "In-residence dining", body: "The kitchen at 1939 and the cellar below, delivered to your door." },
+      { title: "The Study · L2", body: "A full floor set aside for residents, below the hotel floors." },
+      { title: "The Signal", body: "The rooftop terrace, thirteen floors up, facing the river." },
+      { title: "The League · L1", body: "Fitness, shared with the hotel and open to residents." },
     ],
   },
   penthouses: {
     label: "(03) The penthouse collection",
-    title: ["Twelve.", "Never more."],
+    title: ["The view belongs", "to twelve."],
     body: "Twelve condominium residences for sale at the top of the North Tower. Private arrival, panoramic glass, and the kind of quiet only altitude buys. Each is offered privately, by appointment.",
     details: [
       { k: "Residences", v: "12, for sale" },

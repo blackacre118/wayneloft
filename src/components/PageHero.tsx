@@ -45,7 +45,7 @@ export function PageHero({
           style={{ objectPosition }}
         />
       ) : (
-        <Placeholder label={render} className="absolute inset-0 -z-20 !items-start pt-28 md:pt-32" />
+        <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20 !items-start pt-28 md:pt-32" />
       )}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.5)]" />
       <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-t from-night/90 to-transparent" />

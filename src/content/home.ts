@@ -26,7 +26,7 @@ export const home = {
   },
   penthouses: {
     label: "(04) The penthouse collection",
-    title: ["Twelve.", "Never more."],
+    title: ["The view belongs", "to twelve."],
     body: "Twelve private residences for sale at the top of the North Tower. Private arrival, panoramic glass, and the kind of quiet that only altitude buys.",
     cta: { href: "/residences?role=penthouse#inquire", label: "Request the collection" },
     imageAlt: "The crown of the North Tower against the night sky",
@@ -36,22 +36,22 @@ export const home = {
     title: "One kitchen, one cellar, one standard — for guests and residents alike.",
     items: [
       {
-        title: "The Roof",
-        body: "An activated terrace thirteen floors up on the South Tower, facing the Detroit River.",
+        title: "The Signal",
+        body: "The rooftop terrace, thirteen floors up on the South Tower, facing the Detroit River.",
         render: "Render · South Tower rooftop terrace, dusk",
       },
       {
-        title: "Dining & Bar",
-        body: "A full food and beverage program serving the hotel and the residences, from lobby bar to in-residence dining.",
+        title: "1939 & Pennyworth",
+        body: "The restaurant and the lobby bar — one kitchen and one cellar serving the hotel and the residences, down to in-residence dining.",
         render: "Render · Lobby bar, low light",
       },
       {
-        title: "Level 23",
-        body: "A full-floor venue with its own kitchen and bar, and a direct elevator from the lobby.",
+        title: "The Manor",
+        body: "Level 23: a full-floor venue with its own kitchen and bar, and a direct elevator from the lobby.",
         render: "Render · Level 23 venue, city at night",
       },
     ],
-    strip: ["Lobby & fitness · L1", "Resident amenity · L2", "Conference rooms", "Off-site parking"],
+    strip: ["The League · Fitness, L1", "The Study · Residents, L2", "The Cave · Cellar", "Fox · Conference", "The Garage · Parking"],
     cta: { href: "/amenities", label: "All amenities" },
   },
   development: {
