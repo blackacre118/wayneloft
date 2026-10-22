@@ -21,7 +21,7 @@ export const renderFiles: Record<string, string> = {
   "Render · The Signal, rooftop at dusk": "signal-rooftop",
   "Render · The Manor bar, Level 23": "manor-bar",
   "Render · The Manor, evening reception": "manor-venue",
-  "Render · Pool": "league-pool",
+  "Render · The pool": "league-pool",
   "Render · Resident mail room": "mail-room",
   "Render · Conference room": "fox-conference",
 };

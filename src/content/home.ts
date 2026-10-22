@@ -37,7 +37,7 @@ export const home = {
     items: [
       {
         title: "The Signal",
-        body: "The rooftop terrace, thirteen floors up on the South Tower, facing the Detroit River.",
+        body: "The rooftop terrace and pool, thirteen floors up on the South Tower, facing the Detroit River.",
         render: "Render · The Signal, rooftop at dusk",
       },
       {

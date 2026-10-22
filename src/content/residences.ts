@@ -25,7 +25,7 @@ export const residences = {
     items: [
       { title: "In-residence dining", body: "The kitchen at 1939 and the cellar below, delivered to your door." },
       { title: "The Study · L2", body: "A full floor set aside for residents, below the hotel floors." },
-      { title: "The Signal", body: "The rooftop terrace, thirteen floors up, facing the river." },
+      { title: "The Signal", body: "The rooftop terrace and pool, thirteen floors up, facing the river." },
       { title: "The League · L1", body: "Fitness, shared with the hotel and open to residents." },
     ],
   },

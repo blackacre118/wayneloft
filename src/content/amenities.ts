@@ -2,7 +2,7 @@ export const amenities = {
   meta: {
     title: "Amenities",
     description:
-      "Food & beverage, the South Tower rooftop, the Level 23 venue, fitness and resident spaces at WAYNE, Detroit.",
+      "Food & beverage, the South Tower rooftop and pool, the Level 23 venue, fitness and resident spaces at WAYNE, Detroit.",
   },
   hero: {
     eyebrow: "Amenities · Food & beverage",
@@ -18,7 +18,7 @@ export const amenities = {
   roof: {
     label: "(02) The Signal · South Tower roof",
     title: ["Thirteen floors up.", "Facing the river."],
-    body: "The Signal is the South Tower’s rooftop terrace — open air, the Detroit River on the horizon, and the North Tower rising beside it.",
+    body: "The Signal is the South Tower’s rooftop terrace and pool — open air, the Detroit River on the horizon, and the North Tower rising beside it.",
     render: "Render · The Signal, rooftop at dusk",
   },
   venue: {
@@ -32,10 +32,11 @@ export const amenities = {
     label: "(04) Resident & guest spaces",
     items: [
       { k: "The League · L1", v: "Lobby, lounge and fitness" },
+      { k: "Pool", v: "At The Signal, on the South Tower roof" },
       { k: "The Study · L2", v: "Resident amenity floor" },
       { k: "Fox", v: "Meeting and conference rooms" },
       { k: "The Garage", v: "Off-site parking" },
     ],
-    gallery: ["Render · Pool", "Render · Resident mail room", "Render · Conference room"],
+    gallery: ["Render · The pool", "Render · Resident mail room", "Render · Conference room"],
   },
 } as const;

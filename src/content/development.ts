@@ -31,7 +31,7 @@ export const development = {
       {
         name: "South Tower",
         spec: "12 floors · 1966",
-        body: "Cast-in-place concrete, limestone-toned. Residences, with the activated roof terrace on top.",
+        body: "Cast-in-place concrete, limestone-toned. Residences, with the rooftop terrace and pool on top.",
       },
       {
         name: "North Tower",
@@ -65,7 +65,7 @@ export const development = {
       { use: "Residences", where: "South Tower & upper North Tower", size: "~300 apartments" },
       { use: "Penthouses (for sale)", where: "Top of North Tower", size: "12 condominiums" },
       { use: "Event venue", where: "Level 23", size: "Full floor, kitchen + bar" },
-      { use: "Rooftop", where: "South Tower roof", size: "Activated terrace" },
+      { use: "Rooftop", where: "South Tower roof", size: "Terrace + pool" },
       { use: "F&B", where: "Building-wide", size: "Shared hotel + residences" },
       { use: "Retail", where: "Outlot parcels", size: "Planned" },
     ],
