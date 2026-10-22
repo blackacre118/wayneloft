@@ -12,7 +12,7 @@ export const residences = {
   apartments: {
     label: "(01) The apartments",
     title: ["Hotel service.", "Your own front door."],
-    body: "Apartments across the South Tower and the upper North Tower, each with access to the hotel’s food and beverage program, the resident amenity level and the roof. Floor plans and pricing to be released [RELEASE DATE].",
+    body: "Apartments across the South Tower and the upper North Tower, each with access to the hotel’s food and beverage program, the resident amenity level and the roof. Floor plans and pricing will be released in spring 2027; first residences lease from spring 2028.",
     gallery: [
       "Render · Residence living room, evening",
       "Render · Kitchen detail, stone + brass",
@@ -37,7 +37,7 @@ export const residences = {
       { k: "Residences", v: "12, for sale" },
       { k: "Location", v: "Upper floors, North Tower" },
       { k: "Arrival", v: "Private" },
-      { k: "Pricing", v: "By request · [PRICING]" },
+      { k: "Pricing", v: "From $800 / SF" },
     ],
     gallery: [
       "Render · Penthouse great room, panoramic glass",

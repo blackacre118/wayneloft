@@ -22,7 +22,7 @@ export const development = {
       { k: "Site", v: "~2.76 acres + outlot parcels" },
       { k: "Zoning", v: "B5 — by right" },
       { k: "Existing condition", v: "Vacant office" },
-      { k: "Design", v: "Complete" },
+      { k: "Design", v: "Complete by end of 2026" },
     ],
   },
   towers: {
@@ -43,7 +43,7 @@ export const development = {
   stacking: {
     label: "(03) Stacking plan",
     title: "Floor by floor.",
-    note: "Indicative. The split between residences and penthouses in the upper North Tower is [CONFIRM LEVELS].",
+    note: "Indicative. There is no Level 13 — numbering runs from 12 to 14 — so the North Tower’s 22 floors top out at Level 23.",
   },
   site: {
     label: "(04) Site & outlots",
@@ -78,11 +78,11 @@ export const development = {
   timeline: {
     label: "(07) Status & timeline",
     items: [
-      { phase: "Design", status: "Complete" },
-      { phase: "Entitlements", status: "B5 — by right · [STATUS]" },
-      { phase: "Construction start", status: "[DATE]" },
-      { phase: "Hotel opening", status: "[OPENING YEAR]" },
-      { phase: "Residences delivery", status: "[DATE]" },
+      { phase: "Design", status: "Complete by end of 2026" },
+      { phase: "Entitlements", status: "Q1 2027 · B5, by right" },
+      { phase: "Construction start", status: "Summer 2027" },
+      { phase: "First residences leasing", status: "Spring 2028" },
+      { phase: "Hotel opening", status: "Fall 2028" },
     ],
   },
   inquire: {

@@ -23,7 +23,7 @@ export const site = {
 /** Headline figures. Hotel keys and apartments are approximate — confirm with owner. */
 export const stats = [
   { value: "586K", label: "Square feet" },
-  { value: "23", label: "Levels" },
+  { value: "L23", label: "Top floor" },
   { value: "~180", label: "Hotel keys" },
   { value: "~300", label: "Residences" },
   { value: "12", label: "Penthouses" },

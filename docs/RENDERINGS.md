@@ -31,17 +31,11 @@ Export at max 2400px wide, compressed JPG; hero images ideally 2880px+.
 | `site-aerial.jpg` (replace)     | / Development · /development Site         | Licensed aerial with parcels outlined |
 | `exterior-night.jpg` (upgrade)  | Heroes, hotel, penthouses                 | Same view at 2880px+; ideally a distinct crown shot for the penthouse section |
 
-## Text placeholders to fill (in `src/content/`)
+## Text placeholders
 
-- `[STATUS]` — project status (home, development)
-- `[OPENING YEAR]` — hotel opening (hotel, development timeline)
-- `[DATE]` — construction start, residences delivery (development timeline)
-- `[RELEASE DATE]` — apartment floor plans / pricing release (residences)
-- `[PRICING]` — penthouse pricing line (residences)
-- `[CONFIRM LEVELS]` — residences / penthouse split in the North Tower stacking plan (development); the diagram currently shows penthouses on L20–22
-- `~180` hotel keys and `~300` apartments — confirm (`src/content/site.ts`, home, hotel, residences, development)
-- `[LEGAL CONTACT EMAIL]`, `[PRIVACY CONTACT EMAIL]`, `[EFFECTIVE DATE]` — `src/content/legal.ts`
-- All legal copy in `src/content/legal.ts` is **DRAFT — attorney review**
+All filled as of the owner's update (status, dates, pricing, level numbering, legal contact and effective date).
+Legal copy in `src/content/legal.ts` is still **DRAFT — attorney review**. Penthouse floors in the stacking
+plan are shown on L20–22 (indicative).
 
 ## Environment variables (Vercel)
 

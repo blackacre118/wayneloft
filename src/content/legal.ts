@@ -48,7 +48,7 @@ export const legalPage = {
     {
       id: "contact",
       title: "Contact",
-      paragraphs: ["Blackacre Management, LLC · Detroit, Michigan · [LEGAL CONTACT EMAIL]"],
+      paragraphs: ["Blackacre Management, LLC · Detroit, Michigan · contact@blackacremgt.com"],
     },
   ],
 } as const;
@@ -58,7 +58,7 @@ export const privacyPage = {
     title: "Privacy Policy",
     description: "How WAYNE and Blackacre Management handle information submitted through waynelofts.com.",
   },
-  updated: "[EFFECTIVE DATE]",
+  updated: "September 1, 2026",
   sections: [
     {
       title: "Who we are",
@@ -88,7 +88,7 @@ export const privacyPage = {
     {
       title: "Retention and your choices",
       paragraphs: [
-        "We keep inquiry information for as long as needed to respond and to maintain business records. You may ask us to access, correct or delete your information, or to stop contacting you, by writing to [PRIVACY CONTACT EMAIL].",
+        "We keep inquiry information for as long as needed to respond and to maintain business records. You may ask us to access, correct or delete your information, or to stop contacting you, by writing to contact@blackacremgt.com.",
       ],
     },
     {

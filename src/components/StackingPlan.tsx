@@ -1,6 +1,7 @@
 /**
  * Floor-by-floor stacking diagram, built in code.
- * North Tower: 22 floors + Level 23 venue. South Tower: 12 floors + roof terrace.
+ * North Tower: 22 floors numbered 1–12, 14–23 (no 13); Level 23 is the venue.
+ * South Tower: 12 floors + roof terrace.
  */
 type Use = "lobby" | "amenity" | "hotel" | "residences" | "penthouses" | "venue" | "roof";
 
@@ -14,7 +15,7 @@ const USES: Record<Use, { label: string; cls: string }> = {
   roof: { label: "Roof terrace", cls: "border border-dashed border-fire/70 bg-transparent" },
 };
 
-// Indicative split of upper North Tower floors; see content note.
+// Indicative split of upper North Tower floors.
 function northUse(level: number): Use {
   if (level === 23) return "venue";
   if (level >= 20) return "penthouses";
@@ -31,7 +32,7 @@ function southUse(level: number): Use {
   return "lobby";
 }
 
-const north = Array.from({ length: 23 }, (_, i) => 23 - i);
+const north = Array.from({ length: 23 }, (_, i) => 23 - i).filter((l) => l !== 13);
 const south = Array.from({ length: 13 }, (_, i) => 13 - i);
 
 function Floor({ level, use }: { level: number; use: Use }) {

@@ -62,7 +62,7 @@ export const home = {
       { k: "Developer", v: "Blackacre Management" },
       { k: "Gross area", v: "586,472 SF" },
       { k: "Zoning", v: "B5 — by right" },
-      { k: "Status", v: "Design complete · [STATUS]" },
+      { k: "Status", v: "Construction from summer 2027" },
     ],
     cta: { href: "/development", label: "For city & lending partners" },
     imageAlt: "Aerial view of the site: the two towers, the North Lot and outlot parcels A, B and C",

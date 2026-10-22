@@ -6,7 +6,7 @@ export const hotel = {
   hero: {
     eyebrow: "The hotel · North Tower · Levels 3–11",
     title: ["Arrive", "after dark."],
-    intro: "A hotel that keeps its own hours. Approximately 180 keys above Corktown, opening [OPENING YEAR].",
+    intro: "A hotel that keeps its own hours. Approximately 180 keys above Corktown, opening fall 2028.",
   },
   arrival: {
     label: "(01) Arrival",
