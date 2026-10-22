@@ -15,7 +15,7 @@ const USES: Record<Use, { label: string; cls: string }> = {
   lobby: { label: "Lobby & fitness", cls: "bg-[#141a2b]" },
   roof: { label: "Roof terrace", cls: "border border-dashed border-fire/70 bg-transparent" },
   basement: {
-    label: "Basement · F&B kitchen, 24/7 burger joint, sushi bar, tenant storage",
+    label: "Basement · F&B, back of house",
     cls: "bg-[#3a302c]",
   },
 };
@@ -36,6 +36,11 @@ function southUse(level: number): Use {
   if (level === 2) return "amenity";
   return "lobby";
 }
+
+// Label column is w-7 + gap-3 = 2.5rem; trim a third of the bar length off the North Tower,
+// and the same amount off the basement so it ends at the North Tower's right edge.
+const NORTH_TRIM = "calc((100% - 2.5rem) / 3)";
+const BASEMENT_TRIM = "calc(((100% - var(--g)) / 2 - 2.5rem) / 3)";
 
 const north = Array.from({ length: 23 }, (_, i) => 23 - i).filter((l) => l !== 13);
 const south = Array.from({ length: 13 }, (_, i) => 13 - i);
@@ -61,31 +66,32 @@ function Floor({ level, use }: { level: number; use: Use }) {
 export function StackingPlan({ note }: { note: string }) {
   const legend: Use[] = ["venue", "penthouses", "residences", "hotel", "amenity", "lobby", "roof", "basement"];
   return (
-    <figure>
-      <div className="grid grid-cols-2 items-end gap-x-6 md:gap-x-10">
+    <figure className="[--g:1.5rem] md:[--g:2.5rem]">
+      <div className="grid grid-cols-2 items-end gap-x-(--g)">
         <ol aria-label="South Tower" className="flex flex-col gap-[3px]">
           {south.map((l) => (
             <Floor key={l} level={l} use={southUse(l)} />
           ))}
         </ol>
-        <ol aria-label="North Tower" className="flex flex-col gap-[3px]">
+        {/* North Tower bars are drawn at 2/3 the South Tower's width, to scale. */}
+        <ol aria-label="North Tower" className="flex flex-col gap-[3px]" style={{ paddingRight: NORTH_TRIM }}>
           {north.map((l) => (
             <Floor key={l} level={l} use={northUse(l)} />
           ))}
         </ol>
       </div>
       {/* The basement runs under both towers, so it spans from the South Tower's left edge to the North Tower's right. */}
-      <ol aria-label="Basement, under both towers" className="mt-[3px]">
+      <ol aria-label="Basement, under both towers" className="mt-[3px]" style={{ paddingRight: BASEMENT_TRIM }}>
         <Floor level={0} use="basement" />
       </ol>
-      <div className="grid grid-cols-2 gap-x-6 md:gap-x-10">
+      <div className="grid grid-cols-2 gap-x-(--g)">
         <p className="label mt-5 pl-10 text-muted">South Tower · 1966</p>
         <p className="label mt-5 pl-10 text-muted">North Tower · 1971</p>
       </div>
       <figcaption className="mt-12 border-t border-line pt-8">
         <ul className="grid grid-cols-1 gap-x-8 gap-y-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
           {legend.map((u) => (
-            <li key={u} className={`flex items-center gap-3 ${u === "basement" ? "sm:col-span-2" : ""}`}>
+            <li key={u} className="flex items-center gap-3">
               <span aria-hidden className={`h-3 w-6 shrink-0 ${USES[u].cls}`} />
               {USES[u].label}
             </li>
