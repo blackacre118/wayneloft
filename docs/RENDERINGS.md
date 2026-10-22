@@ -7,25 +7,32 @@ heroes), under ~3 MB.
 
 | Filename | Appears on |
 | --- | --- |
-| `residences-hero` | Residences · hero (full screen) |
-| `residence-living` | Home residences (large) · Residences gallery |
-| `residence-kitchen` | Home residences · Residences gallery |
-| `residence-balcony` | Home residences · Residences gallery |
-| `residence-bedroom` | Residences gallery (wide) |
-| `penthouse-great-room` | Residences · penthouses |
-| `penthouse-arrival` | Residences · penthouses |
-| `lobby` | Hotel · arrival (red chandelier, checker floor) |
-| `reception` | Hotel · arrival (black marble, lit edge) |
-| `hotel-room` | Hotel · rooms |
+| `exterior-night` | Home hero (static import in src/lib/images.ts) |
+| `exterior-dusk` | Development hero |
+| `tower-night` | Residences hero · home penthouse section |
+| `lobby-lounge` | Hotel hero · home hotel section |
+| `rooftop-aerial` | Amenities hero |
+| `site-aerial` | Home + development site |
+| `reception` | Hotel · arrival (large) |
+| `lobby` | Hotel · arrival (tall) |
+| `hotel-living` | Hotel · rooms (large) |
 | `hotel-bath` | Hotel · rooms |
-| `hotel-corridor` | Hotel · rooms |
-| `pennyworth-bar` | Home amenities card · Hotel F&B |
-| `dining-1939` | Amenities · F&B |
+| `hotel-bed` | Hotel · rooms |
+| `hotel-suite-bath` | Hotel · rooms (wide) |
+| `kitchen` | Hotel F&B · Amenities F&B |
+| `pennyworth-lounge` | Home amenities card |
 | `signal-rooftop` | Home amenities card · Amenities roof |
-| `manor-level-23` | Home amenities card · Amenities venue |
-| `league-fitness` | Amenities · spaces |
-| `study-lounge` | Amenities · spaces |
-| `fox-conference` | Amenities · spaces |
+| `manor-bar` | Home amenities card |
+| `manor-venue` | Amenities · venue |
+| `residence-living` | Home residences · Residences gallery |
+| `penthouse-great-room` | Residences · penthouses |
+| `league-pool` | Amenities · spaces |
+| `mail-room` | Amenities · spaces |
+| `residence-kitchen` | Home + Residences gallery — still needed |
+| `residence-balcony` | Home + Residences gallery — still needed |
+| `residence-bedroom` | Residences gallery — still needed |
+| `penthouse-arrival` | Residences · penthouses — still needed |
+| `fox-conference` | Amenities · spaces — still needed |
 
 To replace the two existing photos, upload a new file with the same name: `exterior-night.jpg`
 (home hero, hotel split, penthouse sections, page heroes) or `site-aerial.jpg` (development).

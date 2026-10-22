@@ -8,6 +8,7 @@ export const residences = {
     eyebrow: "The residences · South Tower & upper North Tower",
     title: ["A home above", "the noise."],
     intro: "Around 300 apartments, with a hotel’s service one elevator ride away.",
+    imageAlt: "The North Tower lit against a stormy night sky",
   },
   apartments: {
     label: "(01) The apartments",
@@ -17,7 +18,6 @@ export const residences = {
       "Render · Residence living room, evening",
       "Render · Kitchen detail, stone + brass",
       "Render · Balcony, South Tower",
-      "Render · Bedroom, city at night",
     ],
   },
   living: {

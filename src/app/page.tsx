@@ -56,9 +56,9 @@ export default function HomePage() {
         title={hotel.title}
         body={hotel.body}
         cta={hotel.cta}
-        image={images.exteriorNight}
+        image={images.lobbyLounge}
         imageAlt={hotel.imageAlt}
-        objectPosition="12% 35%"
+        objectPosition="50% 50%"
       />
 
       {/* (03) Residences */}
@@ -94,9 +94,9 @@ export default function HomePage() {
           title={penthouses.title}
           body={penthouses.body}
           cta={penthouses.cta}
-          image={images.exteriorNight}
+          image={images.towerNight}
           imageAlt={penthouses.imageAlt}
-          objectPosition="22% 0%"
+          objectPosition="50% 45%"
         >
           <p className="max-w-[560px] text-[11px] leading-relaxed text-muted">{condoShort}</p>
         </FullBleed>

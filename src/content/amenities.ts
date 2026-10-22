@@ -13,19 +13,19 @@ export const amenities = {
     label: "(01) 1939 · Pennyworth · The Cave",
     title: ["One kitchen.", "One cellar."],
     body: "1939 is the dining room. Pennyworth is the lobby bar. The Cave is the cellar beneath them both. One program serves the entire building — events in The Manor and dining delivered to hotel rooms and residences. Same kitchen, same cellar, same standard.",
-    render: "Render · Dining room, evening service",
+    render: "Render · The kitchen, evening service",
   },
   roof: {
     label: "(02) The Signal · South Tower roof",
     title: ["Thirteen floors up.", "Facing the river."],
     body: "The Signal is the South Tower’s rooftop terrace — open air, the Detroit River on the horizon, and the North Tower rising beside it.",
-    render: "Render · Rooftop terrace, river view at dusk",
+    render: "Render · The Signal, rooftop at dusk",
   },
   venue: {
     label: "(03) The Manor · Level 23",
     title: ["The top floor,", "for the night."],
     body: "The Manor is a full-floor event venue at the top of the North Tower, with its own kitchen and bar and a direct elevator from the lobby. Dinners, launches, weddings, private evenings.",
-    render: "Render · Level 23 venue set for dinner",
+    render: "Render · The Manor, evening reception",
     cta: { href: "/amenities?role=events#inquire", label: "Event inquiries" },
   },
   spaces: {
@@ -36,6 +36,6 @@ export const amenities = {
       { k: "Fox", v: "Meeting and conference rooms" },
       { k: "The Garage", v: "Off-site parking" },
     ],
-    gallery: ["Render · Fitness, L1", "Render · Resident lounge, L2", "Render · Conference room"],
+    gallery: ["Render · Pool", "Render · Resident mail room", "Render · Conference room"],
   },
 } as const;

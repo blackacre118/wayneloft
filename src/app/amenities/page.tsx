@@ -24,9 +24,9 @@ export default function AmenitiesPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
-        image={images.exteriorNight}
-        imageAlt="The South Tower’s limestone facade lit at night"
-        objectPosition="70% 45%"
+        image={images.rooftopAerial}
+        imageAlt="The Signal: the South Tower rooftop terrace at dusk, seen from above"
+        objectPosition="50% 50%"
       />
       <Split label={fnb.label} title={fnb.title} body={fnb.body} render={fnb.render} />
       <Split reverse label={roof.label} title={roof.title} body={roof.body} render={roof.render} />

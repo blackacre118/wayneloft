@@ -28,7 +28,9 @@ export default function ResidencesPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
-        render="Render · Residence living room at night, city view"
+        image={images.towerNight}
+        imageAlt={hero.imageAlt}
+        objectPosition="50% 40%"
       />
 
       {/* Apartments */}

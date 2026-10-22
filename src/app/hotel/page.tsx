@@ -27,9 +27,9 @@ export default function HotelPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
-        image={images.exteriorNight}
-        imageAlt="The North Tower’s dark glass curtain wall at night"
-        objectPosition="10% 30%"
+        image={images.lobbyLounge}
+        imageAlt="The lobby: black marble, brass arches and glass-globe chandeliers"
+        objectPosition="50% 55%"
       />
 
       {/* Arrival & lobby */}

@@ -10,19 +10,20 @@ export const hotel = {
   },
   arrival: {
     label: "(01) Arrival",
-    title: ["One red light", "in a dark room."],
-    body: "The lobby is kept low and quiet. A single sculptural chandelier in red glass hangs over a black-and-white marble floor. Reception is one block of black marble, its edge lit in fire orange. Nothing else asks for your attention.",
-    render: "Render · Lobby, red glass chandelier, checker marble floor",
-    render2: "Render · Black marble reception, lit edge",
+    title: ["Black marble.", "Low light."],
+    body: "The lobby is kept dark and quiet — black marble, warm brass, light pooled where it’s needed. Reception is a single block of stone with a lit edge. Nothing else asks for your attention.",
+    render: "Render · Black marble reception, lit edge",
+    render2: "Render · Lobby, evening arrivals",
   },
   rooms: {
     label: "(02) Rooms",
     title: ["The city,", "floor to ceiling."],
     body: "Nine floors of the North Tower, behind its original dark glass curtain wall. Quiet corridors, low light, and rooms framed by the skyline.",
     gallery: [
-      "Render · Guest room, night view",
-      "Render · Bath, stone and dark glass",
-      "Render · Corridor, low light",
+      "Render · Suite living area, night view",
+      "Render · Bath, black marble",
+      "Render · Guest room, bed detail",
+      "Render · Suite bath, city view",
     ],
   },
   levels: {
@@ -38,7 +39,7 @@ export const hotel = {
     label: "(04) Food & beverage",
     title: ["Lobby bar to", "room service."],
     body: "1939 in the dining room, Pennyworth at the bar, The Cave below. One kitchen and one cellar serve the hotel and the residences — through to events in The Manor and in-room dining.",
-    render: "Render · Lobby bar, evening",
+    render: "Render · The kitchen, evening service",
     cta: { href: "/amenities", label: "The F&B program" },
   },
   operator: {

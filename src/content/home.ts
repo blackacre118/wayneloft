@@ -16,7 +16,7 @@ export const home = {
     title: ["Arrive", "after dark."],
     body: "Approximately 180 keys across nine floors of the North Tower, with a lobby, lounge and hotel amenities on the first two levels. Quiet corridors, low light, the city framed floor to ceiling.",
     cta: { href: "/hotel", label: "Enter the hotel" },
-    imageAlt: "North Tower glass curtain wall at night",
+    imageAlt: "The lobby lounge: black marble, brass and glass-globe chandeliers",
   },
   residences: {
     label: "(03) The residences",
@@ -29,7 +29,7 @@ export const home = {
     title: ["The view belongs", "to twelve."],
     body: "Twelve private residences for sale at the top of the North Tower. Private arrival, panoramic glass, and the kind of quiet that only altitude buys.",
     cta: { href: "/residences?role=penthouse#inquire", label: "Request the collection" },
-    imageAlt: "The crown of the North Tower against the night sky",
+    imageAlt: "The North Tower lit against a stormy night sky",
   },
   amenities: {
     label: "(05) Amenities · Food & beverage",
@@ -38,17 +38,17 @@ export const home = {
       {
         title: "The Signal",
         body: "The rooftop terrace, thirteen floors up on the South Tower, facing the Detroit River.",
-        render: "Render · South Tower rooftop terrace, dusk",
+        render: "Render · The Signal, rooftop at dusk",
       },
       {
         title: "1939 & Pennyworth",
         body: "The restaurant and the lobby bar — one kitchen and one cellar serving the hotel and the residences, down to in-residence dining.",
-        render: "Render · Lobby bar, low light",
+        render: "Render · Pennyworth lounge, low light",
       },
       {
         title: "The Manor",
         body: "Level 23: a full-floor venue with its own kitchen and bar, and a direct elevator from the lobby.",
-        render: "Render · Level 23 venue, city at night",
+        render: "Render · The Manor bar, Level 23",
       },
     ],
     strip: ["The League · Fitness, L1", "The Study · Residents, L2", "The Cave · Cellar", "Fox · Conference", "The Garage · Parking"],
