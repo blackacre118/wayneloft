@@ -2,8 +2,9 @@
  * Floor-by-floor stacking diagram, built in code.
  * North Tower: 22 floors numbered 1–12, 14–23 (no 13); Level 23 is the venue.
  * South Tower: 12 floors + roof terrace.
+ * Basement: one level running under both towers.
  */
-type Use = "lobby" | "amenity" | "hotel" | "residences" | "penthouses" | "venue" | "roof";
+type Use = "lobby" | "amenity" | "hotel" | "residences" | "penthouses" | "venue" | "roof" | "basement";
 
 const USES: Record<Use, { label: string; cls: string }> = {
   venue: { label: "Event venue", cls: "bg-fire/80" },
@@ -13,6 +14,10 @@ const USES: Record<Use, { label: string; cls: string }> = {
   amenity: { label: "Amenity", cls: "bg-[#1a2238]" },
   lobby: { label: "Lobby & fitness", cls: "bg-[#141a2b]" },
   roof: { label: "Roof terrace", cls: "border border-dashed border-fire/70 bg-transparent" },
+  basement: {
+    label: "Basement · F&B kitchen, 24/7 burger joint, sushi bar, tenant storage",
+    cls: "bg-[#3a302c]",
+  },
 };
 
 // Indicative split of upper North Tower floors.
@@ -35,11 +40,18 @@ function southUse(level: number): Use {
 const north = Array.from({ length: 23 }, (_, i) => 23 - i).filter((l) => l !== 13);
 const south = Array.from({ length: 13 }, (_, i) => 13 - i);
 
+function floorTag(level: number, use: Use) {
+  if (use === "roof") return "RF";
+  if (use === "basement") return "B1";
+  return `L${level}`;
+}
+
 function Floor({ level, use }: { level: number; use: Use }) {
+  const tag = floorTag(level, use);
   return (
-    <li className="flex items-center gap-3" aria-label={`Level ${level}: ${USES[use].label}`}>
+    <li className="flex items-center gap-3" aria-label={`${tag}: ${USES[use].label}`}>
       <span className="w-7 shrink-0 text-right text-[10px] tabular-nums tracking-[0.1em] text-muted">
-        {use === "roof" ? "RF" : `L${level}`}
+        {tag}
       </span>
       <span className={`h-[14px] flex-1 md:h-[18px] ${USES[use].cls}`} />
     </li>
@@ -47,31 +59,33 @@ function Floor({ level, use }: { level: number; use: Use }) {
 }
 
 export function StackingPlan({ note }: { note: string }) {
-  const legend: Use[] = ["venue", "penthouses", "residences", "hotel", "amenity", "lobby", "roof"];
+  const legend: Use[] = ["venue", "penthouses", "residences", "hotel", "amenity", "lobby", "roof", "basement"];
   return (
     <figure>
-      <div className="grid grid-cols-2 items-end gap-6 md:gap-10">
-        <div>
-          <ol className="flex flex-col gap-[3px]">
-            {south.map((l) => (
-              <Floor key={l} level={l} use={southUse(l)} />
-            ))}
-          </ol>
-          <p className="label mt-5 pl-10 text-muted">South Tower · 1966</p>
-        </div>
-        <div>
-          <ol className="flex flex-col gap-[3px]">
-            {north.map((l) => (
-              <Floor key={l} level={l} use={northUse(l)} />
-            ))}
-          </ol>
-          <p className="label mt-5 pl-10 text-muted">North Tower · 1971</p>
-        </div>
+      <div className="grid grid-cols-2 items-end gap-x-6 md:gap-x-10">
+        <ol aria-label="South Tower" className="flex flex-col gap-[3px]">
+          {south.map((l) => (
+            <Floor key={l} level={l} use={southUse(l)} />
+          ))}
+        </ol>
+        <ol aria-label="North Tower" className="flex flex-col gap-[3px]">
+          {north.map((l) => (
+            <Floor key={l} level={l} use={northUse(l)} />
+          ))}
+        </ol>
+      </div>
+      {/* The basement runs under both towers, so it spans from the South Tower's left edge to the North Tower's right. */}
+      <ol aria-label="Basement, under both towers" className="mt-[3px]">
+        <Floor level={0} use="basement" />
+      </ol>
+      <div className="grid grid-cols-2 gap-x-6 md:gap-x-10">
+        <p className="label mt-5 pl-10 text-muted">South Tower · 1966</p>
+        <p className="label mt-5 pl-10 text-muted">North Tower · 1971</p>
       </div>
       <figcaption className="mt-12 border-t border-line pt-8">
         <ul className="grid grid-cols-1 gap-x-8 gap-y-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
           {legend.map((u) => (
-            <li key={u} className="flex items-center gap-3">
+            <li key={u} className={`flex items-center gap-3 ${u === "basement" ? "sm:col-span-2" : ""}`}>
               <span aria-hidden className={`h-3 w-6 shrink-0 ${USES[u].cls}`} />
               {USES[u].label}
             </li>
