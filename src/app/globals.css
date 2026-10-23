@@ -133,7 +133,7 @@
 .hero-scale {
   animation: slow-scale 14s var(--ease-luxe) both;
 }
-/* Night holds ~8s, dissolves to day over 4s, holds ~8s, returns over 4s. */
+/* Night holds ~5s, dissolves to day over ~3s, holds ~5s, returns over ~3s. */
 @keyframes day-night {
   0%,
   33% {
@@ -149,7 +149,7 @@
 }
 .hero-crossfade {
   opacity: 0;
-  animation: day-night 24s ease-in-out infinite;
+  animation: day-night 16s ease-in-out infinite;
 }
 .fire-glow {
   box-shadow: 0 0 18px var(--color-fire);
