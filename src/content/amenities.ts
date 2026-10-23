@@ -18,7 +18,7 @@ export const amenities = {
   roof: {
     label: "(02) The Signal · South Tower roof",
     title: ["Thirteen floors up.", "Facing the river."],
-    body: "The Signal is the South Tower’s rooftop terrace — open air, the Detroit River on the horizon, and the North Tower rising beside it.",
+    body: "The Signal is the South Tower’s rooftop terrace — open air, a still reflecting pool, the Detroit River on the horizon, and the North Tower rising beside it.",
     render: "Render · The Signal, rooftop at dusk",
   },
   venue: {
