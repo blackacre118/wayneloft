@@ -7,9 +7,11 @@ heroes), under ~3 MB.
 
 | Filename | Appears on |
 | --- | --- |
-| `exterior-night` | Home hero (static import in src/lib/images.ts) |
-| `exterior-dusk` | Development hero |
-| `tower-night` | Residences hero · home penthouse section |
+| `whole-night` | Home hero — re-export at 2880px+ wide |
+| `whole-day` | Development hero — re-export at 2880px+ wide |
+| `exterior-dusk` | Residences hero |
+| `exterior-night` | Residences penthouse section |
+| `tower-night` | Home penthouse section |
 | `lobby-lounge` | Hotel hero · home hotel section |
 | `rooftop-aerial` | Amenities hero |
 | `site-aerial` | Home + development site |

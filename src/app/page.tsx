@@ -27,9 +27,9 @@ export default function HomePage() {
         title={hero.title}
         titleMuted="none"
         intro={hero.intro}
-        image={images.exteriorNight}
+        image={images.wholeNight}
         imageAlt={hero.imageAlt}
-        objectPosition="50% 40%"
+        objectPosition="50% 45%"
       />
 
       {/* (01) The building */}

@@ -8,7 +8,7 @@ export const residences = {
     eyebrow: "The residences · South Tower & upper North Tower",
     title: ["A home above", "the noise."],
     intro: "Around 300 apartments, with a hotel’s service one elevator ride away.",
-    imageAlt: "The North Tower lit against a stormy night sky",
+    imageAlt: "The limestone South Tower and dark glass North Tower at dusk, lit along Sixth Street",
   },
   apartments: {
     label: "(01) The apartments",

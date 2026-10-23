@@ -4,7 +4,7 @@ export const home = {
     title: ["The city’s most", "*private* address."],
     intro:
       "A hotel, residences and twelve private penthouses, rising from two mid-century towers above the river.",
-    imageAlt: "The WAYNE towers at night — limestone South Tower lit from below, dark glass North Tower behind",
+    imageAlt: "WAYNE at night from above: the dark glass North Tower, the limestone South Tower and the glass pool pavilion on Sixth Street",
   },
   building: {
     label: "(01) The building",

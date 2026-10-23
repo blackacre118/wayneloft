@@ -27,9 +27,9 @@ export default function DevelopmentPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
-        image={images.exteriorDusk}
-        imageAlt="The two WAYNE towers on Sixth Street at dusk"
-        objectPosition="40% 45%"
+        image={images.wholeDay}
+        imageAlt="WAYNE in daylight from above: both towers, the glass pool pavilion and the surrounding lots on Sixth Street"
+        objectPosition="50% 45%"
       />
 
       {/* Overview */}

@@ -28,9 +28,9 @@ export default function ResidencesPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
-        image={images.towerNight}
+        image={images.exteriorDusk}
         imageAlt={hero.imageAlt}
-        objectPosition="50% 40%"
+        objectPosition="55% 45%"
       />
 
       {/* Apartments */}
