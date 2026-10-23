@@ -56,7 +56,6 @@ export const development = {
       { k: "Lot B", v: "Planned retail" },
       { k: "Lot C", v: "Planned retail" },
     ],
-    imageAlt: "Aerial view of the site with the main parcel, North Lot and Lots A, B and C outlined",
   },
   program: {
     label: "(05) Program",

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Container } from "@/components/Container";
 import { FactList } from "@/components/FactList";
 import { Heading } from "@/components/Heading";
@@ -7,6 +6,7 @@ import { InquirySection } from "@/components/InquirySection";
 import { Label } from "@/components/Label";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
+import { SitePlan } from "@/components/SitePlan";
 import { StackingPlan } from "@/components/StackingPlan";
 import { StatRow } from "@/components/StatRow";
 import { development } from "@/content/development";
@@ -87,15 +87,8 @@ export default function DevelopmentPage() {
             <p className="max-w-[420px] text-base leading-[1.75] text-ink/75">{site.body}</p>
           </div>
           <Reveal className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-            <div className="relative aspect-[16/9] overflow-hidden lg:col-span-8">
-              <Image
-                src={images.siteAerial}
-                alt={site.imageAlt}
-                fill
-                placeholder="blur"
-                sizes="(min-width: 1024px) 66vw, 100vw"
-                className="object-cover"
-              />
+            <div className="lg:col-span-8">
+              <SitePlan />
             </div>
             <FactList items={site.parcels} className="self-start lg:col-span-4" />
           </Reveal>

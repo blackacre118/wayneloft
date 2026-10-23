@@ -8,13 +8,12 @@ heroes), under ~3 MB.
 | Filename | Appears on |
 | --- | --- |
 | `whole-night` | Home hero — re-export at 2880px+ wide |
-| `whole-day` | Development hero — re-export at 2880px+ wide |
+| `whole-day` | Development hero · home development teaser — re-export at 2880px+ wide |
 | `exterior-dusk` | Residences hero |
 | `exterior-night` | Residences penthouse section |
 | `tower-night` | Home penthouse section |
 | `lobby-lounge` | Hotel hero · home hotel section |
 | `rooftop-aerial` | Amenities hero |
-| `site-aerial` | Home + development site |
 | `reception` | Hotel · arrival (large) |
 | `lobby` | Hotel · arrival (tall) |
 | `hotel-living` | Hotel · rooms (large) |
@@ -37,7 +36,7 @@ heroes), under ~3 MB.
 | `fox-conference` | Amenities · spaces — still needed |
 
 To replace the two existing photos, upload a new file with the same name: `exterior-night.jpg`
-(home hero, hotel split, penthouse sections, page heroes) or `site-aerial.jpg` (development).
+(home hero, hotel split, penthouse sections, page heroes) (the development site section is a code-drawn plan, `src/components/SitePlan.tsx`; the old aerial is in `design/photos-unused/`).
 
 ## Text placeholders
 
