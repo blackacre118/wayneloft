@@ -7,10 +7,10 @@ heroes), under ~3 MB.
 
 | Filename | Appears on |
 | --- | --- |
-| `whole-night` | Home hero — re-export at 2880px+ wide |
-| `whole-day` | Development hero · home development teaser — re-export at 2880px+ wide |
+| `whole-night` | Home hero (crossfades with `whole-day`) — re-export at 2880px+ wide |
+| `whole-day` | Home hero crossfade · development hero — re-export at 2880px+ wide |
 | `exterior-dusk` | Residences hero |
-| `exterior-night` | Residences penthouse section |
+| `exterior-night` | Residences penthouse section · home development teaser |
 | `tower-night` | Home penthouse section |
 | `lobby-lounge` | Hotel hero · home hotel section |
 | `rooftop-aerial` | Amenities hero |

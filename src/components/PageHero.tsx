@@ -15,6 +15,7 @@ export function PageHero({
   as = "h1",
   tall = false,
   titleMuted = "last",
+  crossfadeImage,
 }: {
   eyebrow: string;
   title: readonly string[];
@@ -26,6 +27,8 @@ export function PageHero({
   as?: "h1" | "h2";
   tall?: boolean;
   titleMuted?: "last" | "none";
+  /** Optional second image that slowly fades in and out over `image`. */
+  crossfadeImage?: StaticImageData;
 }) {
   return (
     <section
@@ -47,6 +50,20 @@ export function PageHero({
       ) : (
         <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20 !items-start pt-28 md:pt-32" />
       )}
+      {image && crossfadeImage ? (
+        // Second image dissolves in and out over the first on a slow loop (e.g. night → day → night).
+        <div aria-hidden className="hero-crossfade absolute inset-0 -z-20">
+          <Image
+            src={crossfadeImage}
+            alt=""
+            fill
+            placeholder="blur"
+            sizes="100vw"
+            className="hero-scale object-cover"
+            style={{ objectPosition }}
+          />
+        </div>
+      ) : null}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.5)]" />
       <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-t from-night/90 to-transparent" />
 

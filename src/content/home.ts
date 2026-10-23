@@ -65,7 +65,7 @@ export const home = {
       { k: "Status", v: "Construction from summer 2027" },
     ],
     cta: { href: "/development", label: "For city & lending partners" },
-    imageAlt: "WAYNE in daylight from above: both towers and the glass pool pavilion on Sixth Street",
+    imageAlt: "The WAYNE towers at night: the limestone South Tower lit from below, the dark glass North Tower behind",
   },
   inquire: {
     title: ["Be first", "inside."],

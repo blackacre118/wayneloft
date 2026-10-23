@@ -28,6 +28,7 @@ export default function HomePage() {
         titleMuted="none"
         intro={hero.intro}
         image={images.wholeNight}
+        crossfadeImage={images.wholeDay}
         imageAlt={hero.imageAlt}
         objectPosition="50% 45%"
       />
@@ -150,7 +151,7 @@ export default function HomePage() {
           </div>
           <div className="relative min-h-[320px] overflow-hidden sm:min-h-[440px] lg:min-h-[520px] lg:flex-[1.6]">
             <Image
-              src={images.wholeDay}
+              src={images.exteriorNight}
               alt={development.imageAlt}
               fill
               placeholder="blur"
