@@ -2,7 +2,7 @@ export const amenities = {
   meta: {
     title: "Amenities",
     description:
-      "Food & beverage, the South Tower rooftop and pool, the Level 23 venue, fitness and resident spaces at WAYNE, Detroit.",
+      "Food & beverage, the South Tower rooftop, the indoor pool pavilion, the Level 23 venue, fitness and resident spaces at WAYNE, Detroit.",
   },
   hero: {
     eyebrow: "Amenities · Food & beverage",
@@ -18,7 +18,7 @@ export const amenities = {
   roof: {
     label: "(02) The Signal · South Tower roof",
     title: ["Thirteen floors up.", "Facing the river."],
-    body: "The Signal is the South Tower’s rooftop terrace and pool — open air, the Detroit River on the horizon, and the North Tower rising beside it.",
+    body: "The Signal is the South Tower’s rooftop terrace — open air, the Detroit River on the horizon, and the North Tower rising beside it.",
     render: "Render · The Signal, rooftop at dusk",
   },
   venue: {
@@ -28,15 +28,21 @@ export const amenities = {
     render: "Render · The Manor, evening reception",
     cta: { href: "/amenities?role=events#inquire", label: "Event inquiries" },
   },
+  pool: {
+    label: "(04) Lazarus · The pool pavilion",
+    title: ["Glass, steel,", "and still water."],
+    body: "Lazarus is the indoor pool, set in a glass-and-steel pavilion on the north side of the North Tower and connected to it. Great bronze-green trusses carry the glass overhead — a conservatory built for swimming, lit like a lantern after dark.",
+    render: "Render · Lazarus, the pool pavilion",
+  },
   spaces: {
-    label: "(04) Resident & guest spaces",
+    label: "(05) Resident & guest spaces",
     items: [
       { k: "The League · L1", v: "Lobby, lounge and fitness" },
-      { k: "Pool", v: "At The Signal, on the South Tower roof" },
+      { k: "Lazarus", v: "Indoor pool pavilion, north of the North Tower" },
       { k: "The Study · L2", v: "Resident amenity floor" },
       { k: "Fox", v: "Meeting and conference rooms" },
       { k: "The Garage", v: "Off-site parking" },
     ],
-    gallery: ["Render · The pool", "Render · Resident mail room", "Render · Conference room"],
+    gallery: ["Render · Resident mail room", "Render · Conference room"],
   },
 } as const;

@@ -37,7 +37,7 @@ export const home = {
     items: [
       {
         title: "The Signal",
-        body: "The rooftop terrace and pool, thirteen floors up on the South Tower, facing the Detroit River.",
+        body: "The rooftop terrace, thirteen floors up on the South Tower, facing the Detroit River.",
         render: "Render · The Signal, rooftop at dusk",
       },
       {
@@ -51,7 +51,7 @@ export const home = {
         render: "Render · The Manor bar, Level 23",
       },
     ],
-    strip: ["The League · Fitness, L1", "The Study · Residents, L2", "The Cave · Cellar", "Fox · Conference", "The Garage · Parking"],
+    strip: ["The League · Fitness, L1", "Lazarus · Pool", "The Study · Residents, L2", "The Cave · Cellar", "Fox · Conference", "The Garage · Parking"],
     cta: { href: "/amenities", label: "All amenities" },
   },
   development: {

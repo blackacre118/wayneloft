@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function AmenitiesPage() {
-  const { hero, fnb, roof, venue, spaces } = amenities;
+  const { hero, fnb, roof, venue, pool, spaces } = amenities;
   return (
     <>
       <PageHero
@@ -31,6 +31,7 @@ export default function AmenitiesPage() {
       <Split label={fnb.label} title={fnb.title} body={fnb.body} render={fnb.render} />
       <Split reverse label={roof.label} title={roof.title} body={roof.body} render={roof.render} />
       <Split id="venue" label={venue.label} title={venue.title} body={venue.body} cta={venue.cta} render={venue.render} />
+      <Split reverse id="pool" label={pool.label} title={pool.title} body={pool.body} render={pool.render} />
 
       <section className="pt-28 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
