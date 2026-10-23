@@ -27,7 +27,7 @@ heroes), under ~3 MB.
 | `manor-venue` | Amenities · venue |
 | `residence-living` | Home residences · Residences gallery |
 | `penthouse-great-room` | Residences · penthouses |
-| `league-pool` | Amenities · spaces |
+| `lazarus-pool` | Amenities · Lazarus pool pavilion |
 | `mail-room` | Amenities · spaces |
 | `residence-kitchen` | Home + Residences gallery — still needed |
 | `residence-balcony` | Home + Residences gallery — still needed |
