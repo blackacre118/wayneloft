@@ -133,24 +133,6 @@
 .hero-scale {
   animation: slow-scale 14s var(--ease-luxe) both;
 }
-/* Night holds ~5s, dissolves to day over ~3s, holds ~5s, returns over ~3s. */
-@keyframes day-night {
-  0%,
-  33% {
-    opacity: 0;
-  }
-  50%,
-  83% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.hero-crossfade {
-  opacity: 0;
-  animation: day-night 16s ease-in-out infinite;
-}
 .fire-glow {
   box-shadow: 0 0 18px var(--color-fire);
 }
@@ -161,8 +143,7 @@
     transform: none;
     transition: none;
   }
-  .hero-scale,
-  .hero-crossfade {
+  .hero-scale {
     animation: none;
   }
   html {

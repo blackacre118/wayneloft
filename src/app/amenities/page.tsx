@@ -3,7 +3,6 @@ import { Container } from "@/components/Container";
 import { FactList } from "@/components/FactList";
 import { Gallery } from "@/components/Gallery";
 import { InquirySection } from "@/components/InquirySection";
-import { Label } from "@/components/Label";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { Split } from "@/components/Split";
@@ -21,22 +20,20 @@ export default function AmenitiesPage() {
   return (
     <>
       <PageHero
-        eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
         image={images.rooftopAerial}
         imageAlt="The Signal: the South Tower rooftop terrace at dusk, seen from above"
         objectPosition="50% 50%"
       />
-      <Split label={fnb.label} title={fnb.title} body={fnb.body} render={fnb.render} />
-      <Split reverse label={roof.label} title={roof.title} body={roof.body} render={roof.render} />
-      <Split id="venue" label={venue.label} title={venue.title} body={venue.body} cta={venue.cta} render={venue.render} />
-      <Split reverse id="pool" label={pool.label} title={pool.title} body={pool.body} render={pool.render} />
+      <Split title={fnb.title} body={fnb.body} render={fnb.render} />
+      <Split reverse title={roof.title} body={roof.body} render={roof.render} />
+      <Split id="venue" title={venue.title} body={venue.body} cta={venue.cta} render={venue.render} />
+      <Split reverse id="pool" title={pool.title} body={pool.body} render={pool.render} />
 
       <section className="pt-28 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{spaces.label}</Label>
-          <Reveal className="lg:col-span-9">
+          <Reveal className="lg:col-span-9 lg:col-start-4">
             <FactList items={spaces.items} />
           </Reveal>
         </Container>

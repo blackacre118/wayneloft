@@ -6,7 +6,6 @@ import { FullBleed } from "@/components/FullBleed";
 import { Gallery } from "@/components/Gallery";
 import { Heading } from "@/components/Heading";
 import { InquirySection } from "@/components/InquirySection";
-import { Label } from "@/components/Label";
 import { PageHero } from "@/components/PageHero";
 import { Placeholder } from "@/components/Placeholder";
 import { Reveal } from "@/components/Reveal";
@@ -23,9 +22,7 @@ export default function HomePage() {
     <>
       <PageHero
         tall
-        eyebrow={hero.eyebrow}
         title={hero.title}
-        titleMuted="none"
         intro={hero.intro}
         image={images.wholeNight}
         crossfadeImage={images.wholeDay}
@@ -36,8 +33,7 @@ export default function HomePage() {
       {/* (01) The building */}
       <section>
         <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{building.label}</Label>
-          <div className="lg:col-span-9">
+          <div className="lg:col-span-9 lg:col-start-4">
             <Reveal>
               <p className="font-display text-[clamp(1.75rem,3.6vw,3rem)] font-light leading-[1.18] tracking-[-0.01em]">
                 {building.statement}
@@ -53,7 +49,6 @@ export default function HomePage() {
       {/* (02) Hotel */}
       <Split
         id="hotel"
-        label={hotel.label}
         title={hotel.title}
         body={hotel.body}
         cta={hotel.cta}
@@ -67,7 +62,6 @@ export default function HomePage() {
         <Container>
           <div className="mb-14 flex flex-col gap-8 md:mb-16 md:flex-row md:items-end md:justify-between">
             <div>
-              <Label className="mb-6">{residences.label}</Label>
               <Heading lines={residences.title} className="text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
             </div>
             <div className="max-w-[380px]">
@@ -91,7 +85,6 @@ export default function HomePage() {
       <div className="mt-28 md:mt-44">
         <FullBleed
           id="penthouses"
-          label={penthouses.label}
           title={penthouses.title}
           body={penthouses.body}
           cta={penthouses.cta}
@@ -106,7 +99,6 @@ export default function HomePage() {
       {/* (05) Amenities */}
       <section id="amenities" className="pt-28 md:pt-44">
         <Container>
-          <Label className="mb-6">{amenities.label}</Label>
           <Reveal>
             <h2 className="mb-16 max-w-[900px] text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] md:mb-20">
               {amenities.title}
@@ -138,7 +130,6 @@ export default function HomePage() {
       <section id="development" className="mt-28 border-t border-hair bg-navy md:mt-44">
         <Container className="flex flex-col gap-16 py-28 md:py-36 lg:flex-row lg:gap-[72px]">
           <div className="lg:flex-1">
-            <Label className="mb-6">{development.label}</Label>
             <h2 className="mb-8 text-[clamp(2.5rem,5vw,3.5rem)] leading-[1.05]">{development.title}</h2>
             <p className="mb-10 text-base leading-[1.75] text-ink/75">{development.body}</p>
             <FactList items={development.facts} />

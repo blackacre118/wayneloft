@@ -1,14 +1,12 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { Heading } from "./Heading";
-import { Label } from "./Label";
 import { Placeholder } from "./Placeholder";
 import { Reveal } from "./Reveal";
 
 /** Split image/text section. Image left by default; `reverse` puts it right. */
 export function Split({
   id,
-  label,
   title,
   body,
   cta,
@@ -20,7 +18,6 @@ export function Split({
   children,
 }: {
   id?: string;
-  label: string;
   title: readonly string[];
   body: string;
   cta?: { href: string; label: string };
@@ -48,8 +45,7 @@ export function Split({
           <Placeholder label={render} className="absolute inset-0" />
         )}
       </div>
-      <div className="flex flex-col justify-between gap-12 bg-navy px-6 py-20 md:px-[72px] md:py-[120px] lg:flex-1">
-        <Label>{label}</Label>
+      <div className="flex flex-col justify-center gap-12 bg-navy px-6 py-20 md:px-[72px] md:py-[120px] lg:flex-1">
         <Reveal>
           <Heading lines={title} className="mb-8 text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
           <p className="max-w-[440px] text-[17px] leading-[1.75] text-ink/80">{body}</p>

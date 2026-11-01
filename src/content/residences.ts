@@ -5,13 +5,11 @@ export const residences = {
       "Approximately 300 apartments and a collection of twelve for-sale penthouses at WAYNE, 1200 Sixth Street, Detroit.",
   },
   hero: {
-    eyebrow: "The residences · South Tower & upper North Tower",
     title: ["A home above", "the noise."],
     intro: "Around 300 apartments, with a hotel’s service one elevator ride away.",
     imageAlt: "The limestone South Tower and dark glass North Tower at dusk, lit along Sixth Street",
   },
   apartments: {
-    label: "(01) The apartments",
     title: ["Hotel service.", "Your own front door."],
     body: "Apartments across the South Tower and the upper North Tower, each with access to the hotel’s food and beverage program, the resident amenity level and the roof. Floor plans and pricing will be released in spring 2027; first residences lease from spring 2028.",
     gallery: [
@@ -21,7 +19,6 @@ export const residences = {
     ],
   },
   living: {
-    label: "(02) Resident life",
     items: [
       { title: "In-residence dining", body: "The kitchen at 1939 and the cellar below, delivered to your door." },
       { title: "The Study · L2", body: "A full floor set aside for residents, below the hotel floors." },
@@ -30,7 +27,6 @@ export const residences = {
     ],
   },
   penthouses: {
-    label: "(03) The penthouse collection",
     title: ["The view belongs", "to twelve."],
     body: "Twelve condominium residences for sale at the top of the North Tower. Private arrival, panoramic glass, and the kind of quiet only altitude buys. Each is offered privately, by appointment.",
     details: [

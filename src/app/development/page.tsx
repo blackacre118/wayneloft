@@ -3,7 +3,6 @@ import { Container } from "@/components/Container";
 import { FactList } from "@/components/FactList";
 import { Heading } from "@/components/Heading";
 import { InquirySection } from "@/components/InquirySection";
-import { Label } from "@/components/Label";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SitePlan } from "@/components/SitePlan";
@@ -24,7 +23,6 @@ export default function DevelopmentPage() {
   return (
     <>
       <PageHero
-        eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
         image={images.wholeDay}
@@ -35,8 +33,7 @@ export default function DevelopmentPage() {
       {/* Overview */}
       <section>
         <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{overview.label}</Label>
-          <div className="lg:col-span-9">
+          <div className="lg:col-span-9 lg:col-start-4">
             <Reveal>
               <p className="font-display text-[clamp(1.75rem,3.4vw,2.75rem)] font-light leading-[1.2] tracking-[-0.01em]">
                 {overview.statement}
@@ -57,7 +54,6 @@ export default function DevelopmentPage() {
       <section className="border-t border-hair bg-navy">
         <Container className="grid gap-16 py-28 md:py-36 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
-            <Label className="mb-10">{towers.label}</Label>
             <div className="flex flex-col gap-12">
               {towers.items.map((t) => (
                 <Reveal key={t.name} className="border-t border-line pt-6">
@@ -69,7 +65,6 @@ export default function DevelopmentPage() {
             </div>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
-            <Label className="mb-4">{stacking.label}</Label>
             <h2 className="mb-12 text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.05]">{stacking.title}</h2>
             <StackingPlan note={stacking.note} />
           </div>
@@ -81,7 +76,6 @@ export default function DevelopmentPage() {
         <Container className="py-28 md:py-40">
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
-              <Label className="mb-6">{site.label}</Label>
               <Heading lines={site.title} className="text-[clamp(2.5rem,5.5vw,4rem)] leading-[1.02]" />
             </div>
             <p className="max-w-[420px] text-base leading-[1.75] text-ink/75">{site.body}</p>
@@ -98,8 +92,7 @@ export default function DevelopmentPage() {
       {/* Program */}
       <section className="border-t border-hair">
         <Container className="grid gap-10 py-28 md:py-36 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{program.label}</Label>
-          <Reveal className="overflow-x-auto lg:col-span-9">
+          <Reveal className="overflow-x-auto lg:col-span-9 lg:col-start-4">
             <table className="w-full min-w-[560px] border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b border-line text-xs uppercase tracking-[0.2em] text-muted">
@@ -126,12 +119,10 @@ export default function DevelopmentPage() {
       <section className="border-t border-hair bg-navy">
         <Container className="grid gap-20 py-28 md:py-36 lg:grid-cols-2 lg:gap-16">
           <Reveal>
-            <Label className="mb-6">{sponsor.label}</Label>
             <h2 className="mb-6 text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.05]">{sponsor.title}</h2>
             <p className="max-w-lg text-base leading-[1.75] text-ink/75">{sponsor.body}</p>
           </Reveal>
           <Reveal delay={100}>
-            <Label className="mb-6">{timeline.label}</Label>
             <ol className="border-t border-line">
               {timeline.items.map((t, i) => (
                 <li key={t.phase} className="flex items-baseline justify-between gap-6 border-b border-line py-[18px] text-sm">

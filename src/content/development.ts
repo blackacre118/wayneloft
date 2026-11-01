@@ -5,13 +5,11 @@ export const development = {
       "WAYNE: adaptive reuse of a 586,472 SF two-tower complex at 1200 Sixth Street, Corktown, Detroit, by Blackacre Management.",
   },
   hero: {
-    eyebrow: "For city & lending partners",
     title: ["The", "development."],
     intro:
       "Adaptive reuse of a vacant two-tower office complex into hotel, residential, retail and event use, on a 2.76-acre B5 site in Corktown.",
   },
   overview: {
-    label: "(01) Overview",
     statement:
       "A dark, idle landmark on Sixth Street becomes a working building again — a hotel, homes, a rooftop, a venue and new retail on the surrounding lots. Every system replaced. Every floor reimagined.",
     facts: [
@@ -26,7 +24,6 @@ export const development = {
     ],
   },
   towers: {
-    label: "(02) The two towers",
     items: [
       {
         name: "South Tower",
@@ -41,12 +38,10 @@ export const development = {
     ],
   },
   stacking: {
-    label: "(03) Stacking plan",
     title: "Floor by floor.",
     note: "Indicative. There is no Level 13 — numbering runs from 12 to 14 — so the North Tower’s 22 floors top out at Level 23.",
   },
   site: {
-    label: "(04) Site & outlots",
     title: ["2.76 acres,", "plus the lots around it."],
     body: "The towers sit on a ~2.76-acre B5 parcel on Sixth Street. The North Lot and Lots A, B and C across Sixth, Abbott and Howard Streets are planned for retail, extending the project into the neighborhood.",
     parcels: [
@@ -58,7 +53,6 @@ export const development = {
     ],
   },
   program: {
-    label: "(05) Program",
     rows: [
       { use: "Hotel", where: "North Tower, L3–11", size: "~180 keys" },
       { use: "Residences", where: "South Tower & upper North Tower", size: "~300 apartments" },
@@ -71,12 +65,10 @@ export const development = {
     ],
   },
   sponsor: {
-    label: "(06) Sponsor",
     title: "Blackacre Management.",
     body: "Blackacre Management, LLC is a Michigan-based real estate company focused on adaptive reuse — giving existing buildings a second life rather than replacing them.",
   },
   timeline: {
-    label: "(07) Status & timeline",
     items: [
       { phase: "Design", status: "Complete by end of 2026" },
       { phase: "Entitlements", status: "Q1 2027 · B5, by right" },

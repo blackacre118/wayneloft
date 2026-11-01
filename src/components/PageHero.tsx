@@ -1,11 +1,10 @@
 import Image, { type StaticImageData } from "next/image";
+import { DayNight } from "./DayNight";
 import { Heading } from "./Heading";
-import { Label } from "./Label";
 import { Placeholder } from "./Placeholder";
 
 /** Full-bleed hero: real image when available, otherwise a labelled rendering panel. */
 export function PageHero({
-  eyebrow,
   title,
   intro,
   image,
@@ -17,7 +16,6 @@ export function PageHero({
   titleMuted = "last",
   crossfadeImage,
 }: {
-  eyebrow: string;
   title: readonly string[];
   intro?: string;
   image?: StaticImageData;
@@ -27,7 +25,7 @@ export function PageHero({
   as?: "h1" | "h2";
   tall?: boolean;
   titleMuted?: "last" | "none";
-  /** Optional second image that slowly fades in and out over `image`. */
+  /** Optional day version of `image`; adds a Night/Day toggle that also cycles on its own. */
   crossfadeImage?: StaticImageData;
 }) {
   return (
@@ -50,28 +48,12 @@ export function PageHero({
       ) : (
         <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20 !items-start pt-28 md:pt-32" />
       )}
-      {image && crossfadeImage ? (
-        // Second image dissolves in and out over the first on a slow loop (e.g. night → day → night).
-        <div aria-hidden className="hero-crossfade absolute inset-0 -z-20">
-          <Image
-            src={crossfadeImage}
-            alt=""
-            fill
-            placeholder="blur"
-            sizes="100vw"
-            className="hero-scale object-cover"
-            style={{ objectPosition }}
-          />
-        </div>
-      ) : null}
+      {image && crossfadeImage ? <DayNight day={crossfadeImage} objectPosition={objectPosition} /> : null}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.5)]" />
       <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-t from-night/90 to-transparent" />
 
       <div className="mx-auto mt-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pb-16 pt-40 md:flex-row md:items-end md:justify-between md:gap-10 md:px-14 md:pb-24">
         <div className="max-w-[880px]">
-          <Label tone="fire" className="mb-6 !tracking-[0.3em] md:mb-7">
-            {eyebrow}
-          </Label>
           <Heading
             as={as}
             lines={title}

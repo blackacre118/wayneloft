@@ -1,14 +1,12 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { Heading } from "./Heading";
-import { Label } from "./Label";
 import { Placeholder } from "./Placeholder";
 import { Reveal } from "./Reveal";
 
 /** Full-bleed image with centered statement — the penthouse moment in the reference. */
 export function FullBleed({
   id,
-  label,
   title,
   body,
   cta,
@@ -19,7 +17,6 @@ export function FullBleed({
   children,
 }: {
   id?: string;
-  label: string;
   title: readonly string[];
   body?: string;
   cta?: { href: string; label: string };
@@ -46,9 +43,6 @@ export function FullBleed({
       )}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.62)]" />
       <Reveal className="mx-auto flex max-w-[1328px] flex-col items-center gap-9 px-6 py-32 text-center md:px-14 md:py-40">
-        <Label tone="fire" className="!tracking-[0.3em]">
-          {label}
-        </Label>
         <Heading lines={title} className="text-[clamp(4rem,12vw,7.5rem)] leading-[0.98] tracking-[-0.03em]" />
         {body ? <p className="max-w-[560px] text-lg leading-[1.75] text-ink/80">{body}</p> : null}
         {children}

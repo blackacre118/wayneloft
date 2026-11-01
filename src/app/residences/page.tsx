@@ -5,7 +5,6 @@ import { FullBleed } from "@/components/FullBleed";
 import { Gallery } from "@/components/Gallery";
 import { Heading } from "@/components/Heading";
 import { InquirySection } from "@/components/InquirySection";
-import { Label } from "@/components/Label";
 import { PageHero } from "@/components/PageHero";
 import { Placeholder } from "@/components/Placeholder";
 import { Reveal } from "@/components/Reveal";
@@ -25,7 +24,6 @@ export default function ResidencesPage() {
   return (
     <>
       <PageHero
-        eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
         image={images.exteriorDusk}
@@ -38,7 +36,6 @@ export default function ResidencesPage() {
         <Container>
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
-              <Label className="mb-6">{apartments.label}</Label>
               <Heading lines={apartments.title} className="text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
             </div>
             <p className="max-w-[400px] text-base leading-[1.75] text-ink/75">{apartments.body}</p>
@@ -50,8 +47,7 @@ export default function ResidencesPage() {
       {/* Resident life */}
       <section className="pt-28 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{living.label}</Label>
-          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:col-span-9">
+          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:col-span-9 lg:col-start-4">
             {living.items.map((item, i) => (
               <Reveal as="li" key={item.title} delay={i * 80} className="border-t border-line pt-6">
                 <h3 className="mb-2 text-[28px] font-light">{item.title}</h3>
@@ -66,7 +62,6 @@ export default function ResidencesPage() {
       <div className="mt-28 md:mt-44">
         <FullBleed
           id="penthouses"
-          label={penthouses.label}
           title={penthouses.title}
           body={penthouses.body}
           cta={penthouses.cta}

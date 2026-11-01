@@ -5,7 +5,6 @@ import { FactList } from "@/components/FactList";
 import { Gallery } from "@/components/Gallery";
 import { Heading } from "@/components/Heading";
 import { InquirySection } from "@/components/InquirySection";
-import { Label } from "@/components/Label";
 import { PageHero } from "@/components/PageHero";
 import { Placeholder } from "@/components/Placeholder";
 import { Reveal } from "@/components/Reveal";
@@ -24,7 +23,6 @@ export default function HotelPage() {
   return (
     <>
       <PageHero
-        eyebrow={hero.eyebrow}
         title={hero.title}
         intro={hero.intro}
         image={images.lobbyLounge}
@@ -35,8 +33,7 @@ export default function HotelPage() {
       {/* Arrival & lobby */}
       <section>
         <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{arrival.label}</Label>
-          <div className="lg:col-span-9">
+          <div className="lg:col-span-9 lg:col-start-4">
             <Reveal>
               <Heading lines={arrival.title} className="mb-10 text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
               <p className="max-w-2xl font-display text-[clamp(1.25rem,2.2vw,1.75rem)] font-light leading-[1.45] text-ink/85">
@@ -58,7 +55,6 @@ export default function HotelPage() {
         <Container>
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
-              <Label className="mb-6">{rooms.label}</Label>
               <Heading lines={rooms.title} className="text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
             </div>
             <p className="max-w-[380px] text-base leading-[1.75] text-ink/75">{rooms.body}</p>
@@ -70,8 +66,7 @@ export default function HotelPage() {
       {/* Levels */}
       <section className="pt-28 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{levels.label}</Label>
-          <Reveal className="lg:col-span-9">
+          <Reveal className="lg:col-span-9 lg:col-start-4">
             <FactList items={levels.items} />
           </Reveal>
         </Container>
@@ -79,14 +74,13 @@ export default function HotelPage() {
 
       {/* Dining */}
       <div className="mt-28 md:mt-44">
-        <Split reverse label={dining.label} title={dining.title} body={dining.body} cta={dining.cta} render={dining.render} />
+        <Split reverse title={dining.title} body={dining.body} cta={dining.cta} render={dining.render} />
       </div>
 
       {/* Operator */}
       <section>
         <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
-          <Label className="lg:col-span-3">{operator.label}</Label>
-          <Reveal className="lg:col-span-6">
+          <Reveal className="lg:col-span-6 lg:col-start-4">
             <h2 className="mb-6 text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.05]">{operator.title}</h2>
             <p className="mb-8 max-w-xl text-base leading-[1.75] text-ink/75">{operator.body}</p>
             <Link href={operator.cta.href} className="link-line">
