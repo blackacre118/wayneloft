@@ -29,11 +29,10 @@ heroes), under ~3 MB.
 | `penthouse-great-room` | Residences · penthouses |
 | `lazarus-pool` | Amenities · Lazarus pool pavilion |
 | `mail-room` | Amenities · spaces |
-| `residence-kitchen` | Home + Residences gallery — still needed |
-| `residence-balcony` | Home + Residences gallery — still needed |
+| `residence-kitchen` | Home + Residences gallery |
+| `residence-balcony` | Home + Residences gallery |
 | `residence-bedroom` | Residences gallery — still needed |
-| `penthouse-arrival` | Residences · penthouses — still needed |
-| `fox-conference` | Amenities · spaces — still needed |
+| `penthouse-view` | Residences · penthouses (river view) |
 
 To replace the two existing photos, upload a new file with the same name: `exterior-night.jpg`
 (home hero, hotel split, penthouse sections, page heroes) (the development site section is a code-drawn plan, `src/components/SitePlan.tsx`; the old aerial is in `design/photos-unused/`).

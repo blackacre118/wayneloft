@@ -37,7 +37,7 @@ export const residences = {
     ],
     gallery: [
       "Render · Penthouse great room, panoramic glass",
-      "Render · Penthouse private arrival",
+      "Render · The view down the Detroit River",
     ],
     cta: { href: "/residences?role=penthouse#inquire", label: "Request the collection" },
     imageAlt: "The crown of the North Tower at night",

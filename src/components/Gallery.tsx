@@ -4,6 +4,13 @@ import { Reveal } from "./Reveal";
 /** Editorial gallery grid: one large panel and stacked smaller ones, from the reference residences block. */
 export function Gallery({ renders }: { renders: readonly string[] }) {
   const [first, ...rest] = renders;
+  if (!rest.length) {
+    return (
+      <Reveal>
+        <Placeholder label={first} className="h-[380px] md:h-[560px]" />
+      </Reveal>
+    );
+  }
   return (
     <Reveal className="grid gap-4 md:grid-cols-12">
       <Placeholder label={first} className="h-[380px] md:col-span-7 md:h-[560px]" />

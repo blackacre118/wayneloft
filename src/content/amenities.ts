@@ -37,6 +37,6 @@ export const amenities = {
       { k: "Fox", v: "Meeting and conference rooms" },
       { k: "The Garage", v: "Off-site parking" },
     ],
-    gallery: ["Render · Resident mail room", "Render · Conference room"],
+    gallery: ["Render · Resident mail room"],
   },
 } as const;

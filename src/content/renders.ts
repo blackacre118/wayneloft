@@ -9,7 +9,7 @@ export const renderFiles: Record<string, string> = {
   "Render · Balcony, South Tower": "residence-balcony",
   "Render · Bedroom, city at night": "residence-bedroom",
   "Render · Penthouse great room, panoramic glass": "penthouse-great-room",
-  "Render · Penthouse private arrival": "penthouse-arrival",
+  "Render · The view down the Detroit River": "penthouse-view",
   "Render · Black marble reception, lit edge": "reception",
   "Render · Lobby, evening arrivals": "lobby",
   "Render · Suite living area, night view": "hotel-living",
@@ -23,5 +23,4 @@ export const renderFiles: Record<string, string> = {
   "Render · The Manor, evening reception": "manor-venue",
   "Render · Lazarus, the pool pavilion": "lazarus-pool",
   "Render · Resident mail room": "mail-room",
-  "Render · Conference room": "fox-conference",
 };
