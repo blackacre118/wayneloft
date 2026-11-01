@@ -91,6 +91,21 @@
   .link-line:hover::after {
     transform: scaleX(0.4);
   }
+  /* Phone-only horizontal swipe row: full-bleed to the screen edges, snapping per item. */
+  .snap-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-inline: -1.5rem;
+    padding-inline: 1.5rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1.5rem;
+    scrollbar-width: none;
+  }
+  .snap-row::-webkit-scrollbar {
+    display: none;
+  }
   .placeholder-panel {
     position: relative;
     overflow: hidden;
@@ -137,13 +152,24 @@
   box-shadow: 0 0 18px var(--color-fire);
 }
 
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+.menu-item {
+  animation: menu-in 0.6s var(--ease-luxe) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
     transition: none;
   }
-  .hero-scale {
+  .hero-scale,
+  .menu-item {
     animation: none;
   }
   html {

@@ -32,7 +32,7 @@ export default function ResidencesPage() {
       />
 
       {/* Apartments */}
-      <section className="pt-28 md:pt-40">
+      <section className="pt-20 md:pt-40">
         <Container>
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
@@ -45,7 +45,7 @@ export default function ResidencesPage() {
       </section>
 
       {/* Resident life */}
-      <section className="pt-28 md:pt-44">
+      <section className="pt-20 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:col-span-9 lg:col-start-4">
             {living.items.map((item, i) => (
@@ -59,7 +59,7 @@ export default function ResidencesPage() {
       </section>
 
       {/* Penthouse collection */}
-      <div className="mt-28 md:mt-44">
+      <div className="mt-20 md:mt-44">
         <FullBleed
           id="penthouses"
           title={penthouses.title}

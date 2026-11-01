@@ -30,7 +30,7 @@ export function Split({
 }) {
   return (
     <section id={id} className={`flex flex-col lg:min-h-[820px] ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
-      <div className="relative min-h-[420px] overflow-hidden sm:min-h-[560px] lg:flex-[1.33]">
+      <div className="relative aspect-[4/5] overflow-hidden sm:aspect-auto sm:min-h-[560px] lg:flex-[1.33]">
         {image ? (
           <Image
             src={image}
@@ -45,7 +45,7 @@ export function Split({
           <Placeholder label={render} className="absolute inset-0" />
         )}
       </div>
-      <div className="flex flex-col justify-center gap-12 bg-navy px-6 py-20 md:px-[72px] md:py-[120px] lg:flex-1">
+      <div className="flex flex-col justify-center gap-10 bg-navy px-6 py-16 md:gap-12 md:px-[72px] md:py-[120px] lg:flex-1">
         <Reveal>
           <Heading lines={title} className="mb-8 text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
           <p className="max-w-[440px] text-[17px] leading-[1.75] text-ink/80">{body}</p>

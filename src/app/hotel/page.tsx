@@ -32,7 +32,7 @@ export default function HotelPage() {
 
       {/* Arrival & lobby */}
       <section>
-        <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
+        <Container className="grid gap-10 py-20 md:py-40 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-9 lg:col-start-4">
             <Reveal>
               <Heading lines={arrival.title} className="mb-10 text-[clamp(2.75rem,6vw,4.5rem)] leading-none" />
@@ -51,7 +51,7 @@ export default function HotelPage() {
       </section>
 
       {/* Rooms */}
-      <section className="pt-28 md:pt-44">
+      <section className="pt-20 md:pt-44">
         <Container>
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
@@ -64,7 +64,7 @@ export default function HotelPage() {
       </section>
 
       {/* Levels */}
-      <section className="pt-28 md:pt-44">
+      <section className="pt-20 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <Reveal className="lg:col-span-9 lg:col-start-4">
             <FactList items={levels.items} />
@@ -73,13 +73,13 @@ export default function HotelPage() {
       </section>
 
       {/* Dining */}
-      <div className="mt-28 md:mt-44">
+      <div className="mt-20 md:mt-44">
         <Split reverse title={dining.title} body={dining.body} cta={dining.cta} render={dining.render} />
       </div>
 
       {/* Operator */}
       <section>
-        <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
+        <Container className="grid gap-10 py-20 md:py-40 lg:grid-cols-12 lg:gap-8">
           <Reveal className="lg:col-span-6 lg:col-start-4">
             <h2 className="mb-6 text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.05]">{operator.title}</h2>
             <p className="mb-8 max-w-xl text-base leading-[1.75] text-ink/75">{operator.body}</p>

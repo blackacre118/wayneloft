@@ -32,7 +32,7 @@ export default function DevelopmentPage() {
 
       {/* Overview */}
       <section>
-        <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
+        <Container className="grid gap-10 py-20 md:py-40 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-9 lg:col-start-4">
             <Reveal>
               <p className="font-display text-[clamp(1.75rem,3.4vw,2.75rem)] font-light leading-[1.2] tracking-[-0.01em]">
@@ -52,7 +52,7 @@ export default function DevelopmentPage() {
 
       {/* Towers + stacking plan */}
       <section className="border-t border-hair bg-navy">
-        <Container className="grid gap-16 py-28 md:py-36 lg:grid-cols-12 lg:gap-8">
+        <Container className="grid gap-16 py-20 md:py-36 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
             <div className="flex flex-col gap-12">
               {towers.items.map((t) => (
@@ -73,7 +73,7 @@ export default function DevelopmentPage() {
 
       {/* Site & outlots */}
       <section>
-        <Container className="py-28 md:py-40">
+        <Container className="py-20 md:py-40">
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
               <Heading lines={site.title} className="text-[clamp(2.5rem,5.5vw,4rem)] leading-[1.02]" />
@@ -81,7 +81,7 @@ export default function DevelopmentPage() {
             <p className="max-w-[420px] text-base leading-[1.75] text-ink/75">{site.body}</p>
           </div>
           <Reveal className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-            <div className="lg:col-span-8">
+            <div className="min-w-0 lg:col-span-8">
               <SitePlan />
             </div>
             <FactList items={site.parcels} className="self-start lg:col-span-4" />
@@ -91,9 +91,19 @@ export default function DevelopmentPage() {
 
       {/* Program */}
       <section className="border-t border-hair">
-        <Container className="grid gap-10 py-28 md:py-36 lg:grid-cols-12 lg:gap-8">
-          <Reveal className="overflow-x-auto lg:col-span-9 lg:col-start-4">
-            <table className="w-full min-w-[560px] border-collapse text-left text-sm">
+        <Container className="grid gap-10 py-20 md:py-36 lg:grid-cols-12 lg:gap-8">
+          <Reveal className="lg:col-span-9 lg:col-start-4">
+            {/* Phone: stacked rows instead of a table that would need sideways scrolling. */}
+            <dl className="border-t border-line md:hidden">
+              {program.rows.map((r) => (
+                <div key={r.use} className="border-b border-line py-5">
+                  <dt className="font-display text-xl font-light">{r.use}</dt>
+                  <dd className="mt-1 text-sm text-ink/75">{r.where}</dd>
+                  <dd className="text-sm text-muted">{r.size}</dd>
+                </div>
+              ))}
+            </dl>
+            <table className="hidden w-full border-collapse text-left text-sm md:table">
               <thead>
                 <tr className="border-b border-line text-xs uppercase tracking-[0.2em] text-muted">
                   <th scope="col" className="py-4 pr-6 font-medium">Use</th>
@@ -117,7 +127,7 @@ export default function DevelopmentPage() {
 
       {/* Sponsor + timeline */}
       <section className="border-t border-hair bg-navy">
-        <Container className="grid gap-20 py-28 md:py-36 lg:grid-cols-2 lg:gap-16">
+        <Container className="grid gap-20 py-20 md:py-36 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <h2 className="mb-6 text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.05]">{sponsor.title}</h2>
             <p className="max-w-lg text-base leading-[1.75] text-ink/75">{sponsor.body}</p>

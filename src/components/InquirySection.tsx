@@ -16,7 +16,7 @@ export function InquirySection({
 }) {
   return (
     <section id="inquire" className="scroll-mt-24 border-t border-hair">
-      <div className="mx-auto grid max-w-[1328px] gap-14 px-6 py-28 md:px-14 md:py-40 lg:grid-cols-12 lg:gap-8">
+      <div className="mx-auto grid max-w-[1328px] gap-14 px-6 py-20 md:px-14 md:py-40 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-5">
           <Heading lines={title} className="text-[clamp(3.5rem,8vw,5.5rem)] leading-[0.98]" />
           {intro ? <p className="mt-8 max-w-sm text-base leading-[1.75] text-ink/75">{intro}</p> : null}

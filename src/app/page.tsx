@@ -32,7 +32,7 @@ export default function HomePage() {
 
       {/* (01) The building */}
       <section>
-        <Container className="grid gap-10 py-28 md:py-40 lg:grid-cols-12 lg:gap-8">
+        <Container className="grid gap-10 py-20 md:py-40 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-9 lg:col-start-4">
             <Reveal>
               <p className="font-display text-[clamp(1.75rem,3.6vw,3rem)] font-light leading-[1.18] tracking-[-0.01em]">
@@ -58,7 +58,7 @@ export default function HomePage() {
       />
 
       {/* (03) Residences */}
-      <section id="residences" className="pt-28 md:pt-44">
+      <section id="residences" className="pt-20 md:pt-44">
         <Container>
           <div className="mb-14 flex flex-col gap-8 md:mb-16 md:flex-row md:items-end md:justify-between">
             <div>
@@ -82,7 +82,7 @@ export default function HomePage() {
       </section>
 
       {/* (04) Penthouses */}
-      <div className="mt-28 md:mt-44">
+      <div className="mt-20 md:mt-44">
         <FullBleed
           id="penthouses"
           title={penthouses.title}
@@ -97,17 +97,17 @@ export default function HomePage() {
       </div>
 
       {/* (05) Amenities */}
-      <section id="amenities" className="pt-28 md:pt-44">
+      <section id="amenities" className="pt-20 md:pt-44">
         <Container>
           <Reveal>
             <h2 className="mb-16 max-w-[900px] text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] md:mb-20">
               {amenities.title}
             </h2>
           </Reveal>
-          <div className="grid gap-12 md:grid-cols-3 md:gap-4">
+          <div className="snap-row md:mx-0 md:grid md:grid-cols-3 md:gap-4 md:overflow-visible md:px-0">
             {amenities.items.map((item, i) => (
-              <Reveal key={item.title} delay={i * 100}>
-                <Placeholder label={item.render} className="h-[340px] md:h-[440px]" />
+              <Reveal key={item.title} delay={i * 100} className="w-[82%] shrink-0 snap-start md:w-auto">
+                <Placeholder label={item.render} sizes="(min-width: 768px) 33vw, 82vw" className="h-[400px] md:h-[440px]" />
                 <h3 className="mb-2 mt-6 text-[28px] font-light">{item.title}</h3>
                 <p className="text-[15px] leading-[1.7] text-ink/70">{item.body}</p>
               </Reveal>
@@ -127,8 +127,8 @@ export default function HomePage() {
       </section>
 
       {/* (06) Development teaser */}
-      <section id="development" className="mt-28 border-t border-hair bg-navy md:mt-44">
-        <Container className="flex flex-col gap-16 py-28 md:py-36 lg:flex-row lg:gap-[72px]">
+      <section id="development" className="mt-20 border-t border-hair bg-navy md:mt-44">
+        <Container className="flex flex-col gap-16 py-20 md:py-36 lg:flex-row lg:gap-[72px]">
           <div className="lg:flex-1">
             <h2 className="mb-8 text-[clamp(2.5rem,5vw,3.5rem)] leading-[1.05]">{development.title}</h2>
             <p className="mb-10 text-base leading-[1.75] text-ink/75">{development.body}</p>

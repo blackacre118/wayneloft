@@ -31,7 +31,7 @@ export default function AmenitiesPage() {
       <Split id="venue" title={venue.title} body={venue.body} cta={venue.cta} render={venue.render} />
       <Split reverse id="pool" title={pool.title} body={pool.body} render={pool.render} />
 
-      <section className="pt-28 md:pt-44">
+      <section className="pt-20 md:pt-44">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <Reveal className="lg:col-span-9 lg:col-start-4">
             <FactList items={spaces.items} />

@@ -113,9 +113,13 @@ export function StackingPlan({ note }: { note: string }) {
         <Floor level={0} use="basement" />
       </ol>
       <div className="flex">
-        <p className="label mt-5 min-w-0 flex-[2_1_2.5rem] pl-10 text-muted">North Tower · 1971</p>
+        <p className="label mt-5 min-w-0 flex-[2_1_2.5rem] pl-10 !text-[10px] !tracking-[0.14em] text-muted md:!text-xs md:!tracking-[0.24em]">
+          North Tower · 1971
+        </p>
         <div className="w-(--core) shrink-0" />
-        <p className="label mt-5 min-w-0 flex-[3_1_2.5rem] pr-10 text-muted">South Tower · 1966</p>
+        <p className="label mt-5 min-w-0 flex-[3_1_2.5rem] pr-10 !text-[10px] !tracking-[0.14em] text-muted md:!text-xs md:!tracking-[0.24em]">
+          South Tower · 1966
+        </p>
       </div>
       <figcaption className="mt-12 border-t border-line pt-8">
         <ul className="grid grid-cols-1 gap-x-8 gap-y-3 text-sm sm:grid-cols-2 lg:grid-cols-4">

@@ -46,7 +46,7 @@ export function PageHero({
           style={{ objectPosition }}
         />
       ) : (
-        <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20 !items-start pt-28 md:pt-32" />
+        <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20 !items-start pt-20 md:pt-32" />
       )}
       {image && crossfadeImage ? <DayNight day={crossfadeImage} objectPosition={objectPosition} /> : null}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.5)]" />

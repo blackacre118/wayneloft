@@ -110,25 +110,35 @@ export function Header() {
         className="h-[calc(100dvh-4.5rem)] overflow-y-auto bg-night px-6 pb-10 pt-12 lg:hidden"
       >
         <nav aria-label="Mobile">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col border-t border-hair">
             {site.nav.map((item, i) => (
               <li key={item.href}>
                 <Link
                   ref={i === 0 ? firstLink : undefined}
                   href={item.href}
                   onClick={close}
-                  className="block py-2 font-display text-4xl font-light tracking-tight hover:text-fire"
+                  aria-current={pathname === item.href ? "page" : undefined}
+                  style={{ animationDelay: `${80 + i * 60}ms` }}
+                  className="menu-item flex items-baseline justify-between border-b border-hair py-4 font-display text-[2.5rem] font-light leading-none tracking-tight hover:text-fire aria-[current=page]:text-fire"
                 >
                   {item.label}
+                  <span aria-hidden className="text-xs tabular-nums tracking-[0.2em] text-muted">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
-          <Link href={inquireHref} onClick={close} className="link-line mt-10">
+          <Link
+            href={inquireHref}
+            onClick={close}
+            className="mt-10 flex min-h-14 items-center justify-between bg-ink px-6 text-xs font-medium uppercase tracking-[0.28em] text-night"
+          >
             Inquire
+            <span aria-hidden className="h-px w-10 bg-fire" />
           </Link>
         </nav>
-        <p className="label mt-16 text-muted">
+        <p className="label mt-12 leading-6 text-muted">
           {site.address} · {site.neighborhood} · Detroit
         </p>
       </div>

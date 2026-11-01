@@ -27,7 +27,7 @@ export function FullBleed({
   children?: React.ReactNode;
 }) {
   return (
-    <section id={id} className="relative isolate flex min-h-[760px] items-center overflow-hidden md:min-h-[900px]">
+    <section id={id} className="relative isolate flex min-h-[640px] items-center overflow-hidden md:min-h-[900px]">
       {image ? (
         <Image
           src={image}
@@ -42,7 +42,7 @@ export function FullBleed({
         <Placeholder label={render} sizes="100vw" className="absolute inset-0 -z-20" />
       )}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[rgb(3_5_11/0.62)]" />
-      <Reveal className="mx-auto flex max-w-[1328px] flex-col items-center gap-9 px-6 py-32 text-center md:px-14 md:py-40">
+      <Reveal className="mx-auto flex max-w-[1328px] flex-col items-center gap-9 px-6 py-24 text-center md:px-14 md:py-40">
         <Heading lines={title} className="text-[clamp(4rem,12vw,7.5rem)] leading-[0.98] tracking-[-0.03em]" />
         {body ? <p className="max-w-[560px] text-lg leading-[1.75] text-ink/80">{body}</p> : null}
         {children}

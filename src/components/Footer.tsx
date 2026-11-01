@@ -6,7 +6,7 @@ import { footerDisclaimer } from "@/content/legal";
 
 export function Footer() {
   return (
-    <footer className="border-t border-hair px-6 pb-10 pt-16 md:px-14">
+    <footer className="border-t border-hair px-6 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-16 md:px-14 md:pb-10">
       <div className="mx-auto max-w-[1328px]">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <Logo className="h-4 w-auto" />
@@ -21,10 +21,10 @@ export function Footer() {
               <br />
               {site.developer}
             </p>
-            <ul className="flex flex-col leading-6">
+            <ul className="-my-2 flex flex-col">
               {site.footerLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="hover:text-fire">
+                  <Link href={l.href} className="inline-flex min-h-11 items-center hover:text-fire">
                     {l.label}
                   </Link>
                 </li>
