@@ -2,7 +2,7 @@ export const amenities = {
   meta: {
     title: "Amenities",
     description:
-      "Food & beverage, the South Tower rooftop, the indoor pool pavilion, the Level 23 venue, fitness and resident spaces at WAYNE, Detroit.",
+      "Food & beverage, the South Tower rooftop, the glass pool and pickleball pavilion, the Level 23 venue, fitness and resident spaces at WAYNE, Detroit.",
   },
   hero: {
     title: ["One standard,", "every floor."],
@@ -26,13 +26,13 @@ export const amenities = {
   },
   pool: {
     title: ["Glass, steel,", "and still water."],
-    body: "Lazarus is the indoor pool, set in a glass-and-steel pavilion on the north side of the North Tower and connected to it. Great bronze-green trusses carry the glass overhead — a conservatory built for swimming, lit like a lantern after dark.",
+    body: "Lazarus is the indoor pool, set in a glass-and-steel pavilion beside the North Tower that also holds pickleball courts and tenant amenities. Great bronze-green trusses carry the glass overhead — a conservatory built for swimming, lit like a lantern after dark.",
     render: "Render · Lazarus, the pool pavilion",
   },
   spaces: {
     items: [
       { k: "The League · L1", v: "Lobby, lounge and fitness" },
-      { k: "Lazarus", v: "Indoor pool pavilion, north of the North Tower" },
+      { k: "Lazarus", v: "Glass pavilion: indoor pool and pickleball" },
       { k: "The Study · L2", v: "Resident amenity floor" },
       { k: "Fox", v: "Meeting and conference rooms" },
       { k: "The Garage", v: "Off-site parking" },

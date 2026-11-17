@@ -50,7 +50,7 @@ export const home = {
   },
   development: {
     title: "The development.",
-    body: "An adaptive reuse of a vacant two-tower office complex into hotel, residential, retail and event use — on a 2.76-acre B5 site in Corktown, with additional outlot parcels planned for retail.",
+    body: "An adaptive reuse of a vacant two-tower office complex into hotel, residential, retail and event use — on a nearly ten-acre assemblage in Corktown, between the Lodge Freeway (M-10) and downtown — a site of a scale found nowhere else in downtown Detroit.",
     facts: [
       { k: "Developer", v: "Blackacre Management" },
       { k: "Gross area", v: "586,472 SF" },

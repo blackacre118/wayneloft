@@ -23,7 +23,7 @@ export const residences = {
       { title: "In-residence dining", body: "The kitchen at 1939 and the cellar below, delivered to your door." },
       { title: "The Study · L2", body: "A full floor set aside for residents, below the hotel floors." },
       { title: "The Signal", body: "The rooftop terrace, thirteen floors up, facing the river." },
-      { title: "The League & Lazarus", body: "Fitness on L1, and the indoor pool in its glass pavilion beside the North Tower." },
+      { title: "The League & Lazarus", body: "Fitness on L1, and the indoor pool and pickleball courts in the glass pavilion beside the North Tower." },
     ],
   },
   penthouses: {

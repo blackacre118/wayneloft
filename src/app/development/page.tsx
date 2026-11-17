@@ -71,7 +71,7 @@ export default function DevelopmentPage() {
         </Container>
       </section>
 
-      {/* Site & outlots */}
+      {/* Site: four parcels, nearly ten acres */}
       <section>
         <Container className="py-20 md:py-40">
           <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
@@ -86,6 +86,14 @@ export default function DevelopmentPage() {
             </div>
             <FactList items={site.parcels} className="self-start lg:col-span-4" />
           </Reveal>
+          <ul className="mt-16 grid gap-10 border-t border-line pt-10 md:grid-cols-3 md:gap-8">
+            {site.advantages.map((a, i) => (
+              <Reveal as="li" key={a.title} delay={i * 80}>
+                <h3 className="mb-2 text-2xl font-light">{a.title}</h3>
+                <p className="text-[15px] leading-[1.7] text-ink/70">{a.body}</p>
+              </Reveal>
+            ))}
+          </ul>
         </Container>
       </section>
 
