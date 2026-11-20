@@ -2,6 +2,7 @@
  * Site plan, drawn in code from the 2025 ALTA/NSPS survey (Nowak & Fraus, N910-01) and oriented like it:
  * the John C. Lodge Freeway (M-10) along the top, Sixth Street across the middle.
  * Four parcels: the main parcel (towers, core, glass pavilion) and Lots A, B and C.
+ * One continuous basement runs under both towers and the core.
  * Schematic: proportions follow the survey, but it is not a scaled drawing.
  */
 const KEY = {
@@ -11,6 +12,8 @@ const KEY = {
   pavilion: { label: "Glass pavilion · pool, pickleball, tenant amenities", fill: "#79c2a8" },
   ev: { label: "EV charging", fill: "#e9bd4f" },
 } as const;
+
+const BASEMENT = { label: "Basement · continuous under both towers", stroke: "#b89a7e" };
 
 const STREET = "fill-[#1e2840]";
 const STREET_TEXT = "fill-ink/70 text-[14px] uppercase tracking-[0.2em]";
@@ -50,7 +53,7 @@ export function SitePlan() {
             Street, sit the glass pavilion, the 23-level North Tower, the elevator and utility core, and the 12-level
             South Tower. South of Sixth Street: Lot A between Porter and Abbott Streets, Lot B between Abbott and Howard
             Streets, and Lot C between Howard Street and West Lafayette Boulevard above Brooklyn Street, with EV
-            charging. The lots are surface parking with future retail and parking structures.
+            charging. A single continuous basement runs under both towers and the core. The lots are surface parking with future retail and parking structures.
           </desc>
 
           {/* John C. Lodge Freeway (M-10) along the top */}
@@ -79,20 +82,33 @@ export function SitePlan() {
           <text x="80" y="164" className="fill-ink text-[22px] font-light">Main parcel</text>
           <text x="80" y="186" className={LOT_SUB}>~2.76 acres · B5</text>
 
+          {/* Continuous basement under both towers and the core, drawn beneath the buildings */}
+          <rect
+            x="304"
+            y="124"
+            width="330"
+            height="160"
+            fill={BASEMENT.stroke}
+            fillOpacity={0.12}
+            stroke={BASEMENT.stroke}
+            strokeWidth={1.3}
+            strokeDasharray="5 4"
+          />
+
           {/* Buildings */}
           <rect x="176" y="198" width="126" height="76" fill={KEY.pavilion.fill} fillOpacity={0.35} stroke={KEY.pavilion.fill} strokeWidth={1.4} />
           <text x="239" y="232" textAnchor="middle" className={`fill-ink ${BUILDING_TEXT}`}>Glass</text>
           <text x="239" y="249" textAnchor="middle" className={`fill-ink ${BUILDING_TEXT}`}>pavilion</text>
 
-          <rect x="318" y="136" width="74" height="146" fill={KEY.north.fill} />
-          <text x="355" y="204" textAnchor="middle" className={`fill-night ${BUILDING_TEXT}`}>North</text>
-          <text x="355" y="221" textAnchor="middle" className="fill-night/80 text-[12px]">23</text>
+          <rect x="318" y="136" width="58" height="140" fill={KEY.north.fill} />
+          <text x="347" y="204" textAnchor="middle" className={`fill-night ${BUILDING_TEXT}`}>North</text>
+          <text x="347" y="221" textAnchor="middle" className="fill-night/80 text-[12px]">23</text>
 
-          <rect x="400" y="158" width="40" height="94" fill={KEY.core.fill} />
+          <rect x="384" y="158" width="36" height="94" fill={KEY.core.fill} />
 
-          <rect x="448" y="134" width="156" height="122" fill={KEY.south.fill} />
-          <text x="526" y="192" textAnchor="middle" className={`fill-night ${BUILDING_TEXT}`}>South</text>
-          <text x="526" y="209" textAnchor="middle" className="fill-night/75 text-[12px]">12</text>
+          <rect x="428" y="138" width="194" height="124" fill={KEY.south.fill} />
+          <text x="525" y="196" textAnchor="middle" className={`fill-night ${BUILDING_TEXT}`}>South</text>
+          <text x="525" y="213" textAnchor="middle" className="fill-night/75 text-[12px]">12</text>
 
           {/* South of Sixth Street */}
           <Lot x={62} y={352} w={256} h={308} name="Lot A" sub={["Surface parking", "Future retail / parking"]} />
@@ -120,6 +136,10 @@ export function SitePlan() {
               {k.label}
             </li>
           ))}
+          <li className="flex items-center gap-3">
+            <span aria-hidden className="h-3 w-6 shrink-0 border border-dashed" style={{ borderColor: BASEMENT.stroke }} />
+            {BASEMENT.label}
+          </li>
           <li className="flex items-center gap-3">
             <span aria-hidden className="h-3 w-6 shrink-0 border border-dashed border-ink/60" />
             Surface parking · future retail & parking structures

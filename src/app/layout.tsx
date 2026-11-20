@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter_Tight, Saira } from "next/font/google";
+import { GalleryButton } from "@/components/GalleryButton";
 import { Header } from "@/components/Header";
 import { MobileCta } from "@/components/MobileCta";
 import { Footer } from "@/components/Footer";
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main id="main">{children}</main>
         <Footer />
         <MobileCta />
+        <GalleryButton />
       </body>
     </html>
   );

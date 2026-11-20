@@ -15,6 +15,7 @@ export const site = {
     { href: "/development", label: "Development" },
   ],
   footerLinks: [
+    { href: "/gallery", label: "Gallery" },
     { href: "/legal", label: "Disclosures" },
     { href: "/privacy", label: "Privacy" },
   ],

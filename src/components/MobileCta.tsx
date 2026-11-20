@@ -39,7 +39,7 @@ export function MobileCta() {
     };
   }, [pathname]);
 
-  const show = pastHero && !blocked;
+  const show = pastHero && !blocked && pathname !== "/gallery";
   const href = FORM_PAGES.includes(pathname) ? "#inquire" : "/#inquire";
 
   return (

@@ -39,6 +39,8 @@ export function Header() {
     };
   }, [open]);
 
+  if (pathname === "/gallery") return null;
+
   const solid = scrolled || open;
   const inquireHref = FORM_PAGES.includes(pathname) ? "#inquire" : "/#inquire";
   const close = () => setOpen(false);
